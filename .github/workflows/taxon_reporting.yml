@@ -23,22 +23,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out main branch under "main" directory
+      # Checks-out current branch
       - uses: actions/checkout@v2
-        with:
-          ref: main
-          path: main
-      
-      # Runs a single command using the runners shell
-      - name: list directory content - main
-        run: |
-          ls -l
-          pwd
-          ls -l ..
-          
-      # Checks-out main branch under "main" directory
-      - uses: actions/checkout@v2
-
 
       # Runs a single command using the runners shell
       #- name: Run a one-line script
@@ -49,5 +35,18 @@ jobs:
           ls -l
           pwd
           ls -l main
+          
+      # Checks-out main branch under "main" directory
+      - uses: actions/checkout@v2
+        with:
+          ref: main
+          path: main
+      
+      # Runs a single command using the runners shell
+      - name: list directory content - main
+        run: |
+          ls -l
+          ls -l main
+          pwd
           ls -l ..
 
