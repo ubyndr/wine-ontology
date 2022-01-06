@@ -19,7 +19,7 @@ jobs:
   taxon_reporting:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    container: obolibrary/odkfull:v1.2.26
+    # container: obolibrary/odkfull:v1.2.26
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -34,17 +34,20 @@ jobs:
         run: |
           ls -l
           pwd
+          ls -l ..
           
       # Checks-out main branch under "main" directory
       - uses: actions/checkout@v2
 
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo ${{ github.ref }}
+      #- name: Run a one-line script
+      #  run: echo ${{ github.ref }}
       # Runs a single command using the runners shell
       - name: list directory content - report
         run: |
           ls -l
           pwd
+          ls -l main
+          ls -l ..
 
