@@ -47,4 +47,7 @@ jobs:
           ls -l
           ls -l main
           pwd
-          ls -l ..
+          
+      # Runs a single command using the runners shell
+      - name: diff test
+        run: diff wine.owl main/wine.owl
