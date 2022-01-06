@@ -34,7 +34,6 @@ jobs:
         run: |
           ls -l
           pwd
-          ls -l main
           
       # Checks-out main branch under "main" directory
       - uses: actions/checkout@v2
