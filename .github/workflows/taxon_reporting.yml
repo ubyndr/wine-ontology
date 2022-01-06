@@ -30,8 +30,6 @@ jobs:
           path: main
       # Checks-out main branch under "main" directory
       - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.ref }}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
