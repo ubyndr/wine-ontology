@@ -36,7 +36,7 @@ jobs:
         run: echo ${{ github.ref }}
       # Runs a single command using the runners shell
       - name: list directory content
-        run: ll
+        run: ls -l
 
       # Runs a single command using the runners shell
       - name: magic
