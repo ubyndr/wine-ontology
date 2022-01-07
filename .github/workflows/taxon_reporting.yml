@@ -50,6 +50,8 @@ jobs:
           pwd
           
       # Runs a single command using the runners shell
-      - name: diff test
+      - name: robot report
         run: |
-          docker run -v $PWD/:/work -w /work --rm -ti obolibrary/robot robot diff --left .\wine.owl --right .\main-wine.owl
+          curl -H "Accept: application/zip" https://github.com/ontodev/robot/releases/download/v1.8.3/robot.jar -o robot.jar
+          curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot
+          robot diff --left .\wine.owl --right .\main-wine.owl
