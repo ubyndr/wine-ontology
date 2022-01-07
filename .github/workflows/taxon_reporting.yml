@@ -52,10 +52,9 @@ jobs:
           pwd
           ls -l
           wget https://github.com/ontodev/robot/releases/download/v1.8.3/robot.jar
+          curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot
+          sudo chmod +x robot
           ls -l
-          curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot.sh
-          ls -l
-          sudo chmod +x robot.sh
-          ls -l
-          ./robot.sh help
-          ./robot.sh diff --left wine.owl --right main/wine.owl
+          cp robot.jar /usr/local/bin/
+          cp robot /usr/local/bin/
+          robot diff --left wine.owl --right main/wine.owl
