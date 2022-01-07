@@ -51,6 +51,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: robot report
         run: |
+          pwd
+          ls -l
           curl -H "Accept: application/zip" https://github.com/ontodev/robot/releases/download/v1.8.3/robot.jar -o robot.jar
+          ls -l
           curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot
+          ls -l
+          sudo chmod +x robot
+          ls -l
           robot diff --left wine.owl --right main-wine.owl
