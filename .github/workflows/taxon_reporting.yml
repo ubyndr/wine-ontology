@@ -19,6 +19,7 @@ jobs:
   taxon_reporting:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    container: obolibrary/robot
     # container: obolibrary/odkfull:v1.2.26
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -51,8 +52,4 @@ jobs:
       # Runs a single command using the runners shell
       - name: diff test
         run: |
-          cat wine.owl
-          cat main/wine.owl
-          diff wine.owl main/wine.owl >> diff.txt
-          # echo "redirect test" >> diff.txt
-          cat diff.txt
+          docker run -v $PWD/:/work -w /work --rm -ti obolibrary/robot robot diff --left .\wine.owl --right .\main-wine.owl
