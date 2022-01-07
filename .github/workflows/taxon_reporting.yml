@@ -55,9 +55,9 @@ jobs:
           ls -l
           curl -H "Accept: application/zip" https://github.com/ontodev/robot/releases/download/v1.8.3/robot.jar -o robot.jar
           ls -l
-          curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot
+          curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot.sh
           ls -l
-          sudo chmod +x robot
+          sudo chmod +x robot.sh
           ls -l
-          robot help
-          robot diff --left wine.owl --right main/wine.owl
+          ./robot.sh help
+          ./robot.sh diff --left wine.owl --right main/wine.owl
