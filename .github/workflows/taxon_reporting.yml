@@ -59,4 +59,5 @@ jobs:
           ls -l
           sudo chmod +x robot
           ls -l
-          robot diff --left wine.owl --right main-wine.owl
+          robot help
+          robot diff --left wine.owl --right main/wine.owl
