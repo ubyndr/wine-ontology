@@ -33,7 +33,6 @@ jobs:
       - name: list directory content - report
         run: |
           ls -l
-          pwd
           
       # Checks-out main branch under "main" directory
       - uses: actions/checkout@v2
@@ -46,7 +45,6 @@ jobs:
         run: |
           ls -l
           ls -l main
-          pwd
           
       # Runs a single command using the runners shell
       - name: robot report
