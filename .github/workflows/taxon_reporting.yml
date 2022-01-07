@@ -53,7 +53,7 @@ jobs:
         run: |
           pwd
           ls -l
-          curl -H "Accept: application/zip" https://github.com/ontodev/robot/releases/download/v1.8.3/robot.jar -o robot.jar
+          wget https://github.com/ontodev/robot/releases/download/v1.8.3/robot.jar
           ls -l
           curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot.sh
           ls -l
