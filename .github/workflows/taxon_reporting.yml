@@ -51,5 +51,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: diff test
         run: |
-          diff wine.owl main/wine.owl >> diff.txt
+          # diff wine.owl main/wine.owl >> diff.txt
+          echo "redirect test" >> diff.txt
           cat diff.txt
