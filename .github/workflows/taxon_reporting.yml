@@ -60,24 +60,9 @@ jobs:
           robot diff --left wine.owl --right main/wine.owl > taxon_report.txt
           ls -l
           cat taxon_report.txt
-      - uses: actions/upload-artifact@v2
-        with:
-          name: report
-          path: taxon_report.txt
-      - name: Check dir content
-        run: |
-          pwd
-          ls -l
-      - uses: actions/download-artifact@v2
-        with:
-          name: report
-      - name: Check dir content
-        run: |
-          pwd
-          ls -l
       - name: comment PR
         uses: machine-learning-apps/pr-comment@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          path: report/taxon_report.txt
+          path: taxon_report.txt
