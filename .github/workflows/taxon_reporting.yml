@@ -58,3 +58,13 @@ jobs:
           cp robot.jar /usr/local/bin/
           cp robot /usr/local/bin/
           robot diff --left wine.owl --right main/wine.owl
+      # Report the differences in pull request
+      - uses: mshick/add-pr-comment@v1
+        with:
+          message: |
+            **Hello**
+            🌏
+            !
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
+          allow-repeats: false # This is the default
