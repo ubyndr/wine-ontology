@@ -60,13 +60,16 @@ jobs:
           robot diff --left wine.owl --right main/wine.owl > taxon_report.txt
           ls -l
           cat taxon_report.txt
-      # Report the differences in pull request
-      - uses: mshick/add-pr-comment@v1
+      - uses: actions/upload-artifact@v2
         with:
-          message: |
-            **Hello**
-            🌏
-            !
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
-          allow-repeats: false # This is the default
+          name: report
+          path: taxon_report.txt
+      - uses: actions/download-artifact@v2
+        with:
+          name: report
+      - name: comment PR
+        uses: machine-learning-apps/pr-comment@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          path: report/taxon_report.txt
