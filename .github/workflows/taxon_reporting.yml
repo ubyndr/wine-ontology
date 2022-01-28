@@ -33,7 +33,6 @@ jobs:
       - name: list directory content - report
         run: |
           ls -l
-          pwd
           
       # Checks-out main branch under "main" directory
       - uses: actions/checkout@v2
@@ -46,6 +45,26 @@ jobs:
         run: |
           ls -l
           ls -l main
+          
+      # Runs a single command using the runners shell
+      - name: robot report
+        run: |
           pwd
-          ls -l ..
-
+          ls -l
+          wget https://github.com/ontodev/robot/releases/download/v1.8.3/robot.jar
+          curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot
+          sudo chmod +x robot
+          ls -l
+          cp robot.jar /usr/local/bin/
+          cp robot /usr/local/bin/
+          robot diff --left wine.owl --right main/wine.owl
+      # Report the differences in pull request
+      - uses: mshick/add-pr-comment@v1
+        with:
+          message: |
+            **Hello**
+            🌏
+            !
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
+          allow-repeats: false # This is the default
