@@ -64,9 +64,17 @@ jobs:
         with:
           name: report
           path: taxon_report.txt
+      - name: Check dir content
+        run: |
+          pwd
+          ls -l
       - uses: actions/download-artifact@v2
         with:
           name: report
+      - name: Check dir content
+        run: |
+          pwd
+          ls -l
       - name: comment PR
         uses: machine-learning-apps/pr-comment@master
         env:
