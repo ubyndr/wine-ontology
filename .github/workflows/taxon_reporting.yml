@@ -46,8 +46,8 @@ jobs:
           ls -l
           ls -l main
       # magic
-      - name: git magic test
-        run: git branch        
+      - name: magic test
+        run: diff wine.owl main/wine.owl     
       # Runs a single command using the runners shell
       - name: robot report
         run: |
