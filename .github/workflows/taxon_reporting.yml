@@ -47,7 +47,7 @@ jobs:
           ls -l main
       # magic
       - name: git magic test
-        run: git diff report..main | grep German          
+        run: git branch        
       # Runs a single command using the runners shell
       - name: robot report
         run: |
