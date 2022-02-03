@@ -47,7 +47,7 @@ jobs:
           ls -l main
       # magic
       - name: magic test
-        run: diff wine.owl main/wine.owl     
+        run: diff wine.owl main/wine.owl | grep German   
       # Runs a single command using the runners shell
       - name: robot report
         run: |
