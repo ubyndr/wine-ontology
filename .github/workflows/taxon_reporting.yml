@@ -40,7 +40,7 @@ jobs:
         run: diff wine.owl main/wine.owl | grep German   
       # Runs a single command using the runners shell
       - name: robot report
-        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left wine.owl --right main/wine.owl -o classification-diff.md
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left wine.owl --right main/wine.owl -f markdown -o classification-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:
