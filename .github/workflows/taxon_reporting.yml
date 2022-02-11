@@ -48,12 +48,12 @@ jobs:
         run: diff wine.owl main/wine.owl | grep German   
       # Runs a single command using the runners shell
       - name: robot report
-        run: robot diff --left wine.owl --right main/wine.owl > taxon_report.md
+        run: robot diff --left wine.owl --right main/wine.owl > classification-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:
-          name: taxon_report.md
-          path: taxon_report.md
+          name: classification-diff.md
+          path: classification-diff.md
 
   post_comment:
     needs: taxon_reporting
