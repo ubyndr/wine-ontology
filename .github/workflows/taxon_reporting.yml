@@ -1,12 +1,10 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Diff report
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
+  # Triggers the workflow on pull request events but only for the main branch
   pull_request:
     branches: [ main ]
 
@@ -46,8 +44,8 @@ jobs:
           ls -l
           ls -l main
       # magic
-      - name: git magic test
-        run: git diff report..main | grep German
+      - name: magic test
+        run: diff wine.owl main/wine.owl | grep German   
       # Runs a single command using the runners shell
       - name: robot report
         run: |
@@ -59,12 +57,12 @@ jobs:
           ls -l
           cp robot.jar /usr/local/bin/
           cp robot /usr/local/bin/
-          robot diff --left wine.owl --right main/wine.owl > taxon_report.txt
+          robot diff --left wine.owl --right main/wine.owl > taxon_report.md
           ls -l
           cat taxon_report.txt
       - name: comment PR
-        uses: machine-learning-apps/pr-comment@master
+        uses: machine-learning-apps/pr-comment@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          path: taxon_report.txt
+          path: taxon_report.md
