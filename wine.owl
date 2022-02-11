@@ -7,7 +7,6 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl>
-AnnotationAssertion(rdfs:comment obo:CL_4023011 "test change")
 Declaration(Class(<http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#Barbaresco>))
 Declaration(Class(<http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#Barolo>))
 Declaration(Class(<http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#Burgundy_gamay>))
@@ -76,6 +75,7 @@ Declaration(AnnotationProperty(<http://www.semanticweb.org/davidos/ontologies/20
 # Annotation Property: <http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#also_called> (<http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#also_called>)
 
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#also_called> "Primitivo")
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#also_called> "MAHMUT")
 
 # Annotation Property: <http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#has_taste> (<http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#has_taste>)
 
