@@ -58,8 +58,6 @@ jobs:
           cp robot.jar /usr/local/bin/
           cp robot /usr/local/bin/
           robot diff --left wine.owl --right main/wine.owl > taxon_report.md
-          ls -l
-          cat taxon_report.txt
       - name: comment PR
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
