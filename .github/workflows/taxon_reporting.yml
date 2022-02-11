@@ -61,8 +61,8 @@ jobs:
           ls -l
           cat taxon_report.txt
       - name: comment PR
-        uses: machine-learning-apps/pr-comment@main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        uses: NejcZdovc/comment-pr@v1.1.1
         with:
-          path: taxon_report.md
+          file: "taxon_report.md"
