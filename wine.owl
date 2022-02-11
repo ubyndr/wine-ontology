@@ -75,7 +75,6 @@ Declaration(AnnotationProperty(<http://www.semanticweb.org/davidos/ontologies/20
 # Annotation Property: <http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#also_called> (<http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#also_called>)
 
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#also_called> "Primitivo")
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#also_called> "MAHMUT")
 
 # Annotation Property: <http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#has_taste> (<http://www.semanticweb.org/davidos/ontologies/2020/9/wine.owl#has_taste>)
 
