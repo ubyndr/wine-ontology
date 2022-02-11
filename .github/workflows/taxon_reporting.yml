@@ -48,19 +48,27 @@ jobs:
         run: diff wine.owl main/wine.owl | grep German   
       # Runs a single command using the runners shell
       - name: robot report
-        run: |
-          pwd
-          ls -l
-          wget https://github.com/ontodev/robot/releases/download/v1.8.3/robot.jar
-          curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot
-          sudo chmod +x robot
-          ls -l
-          cp robot.jar /usr/local/bin/
-          cp robot /usr/local/bin/
-          robot diff --left wine.owl --right main/wine.owl > taxon_report.md
-      - name: comment PR
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        uses: NejcZdovc/comment-pr@v1.1.1
+        run: robot diff --left wine.owl --right main/wine.owl > taxon_report.md
+      - name: Upload diff
+        uses: actions/upload-artifact@v2
         with:
-          file: "taxon_report.md"
+          name: taxon_report.md
+          path: taxon_report.md
+
+  post_comment:
+    needs: taxon_reporting
+    runs-on: ubuntu-latest
+    container: docker://dvcorg/cml-py3:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download diff
+        uses: actions/download-artifact@v2
+        with:
+          name: classification-diff.md
+          path: classification-diff.md
+      - name: Prepare comment
+        run: "echo \"Here's a diff of how these changes impact the classified ontology: \n\" >comment.md; cat classification-diff.md/classification-diff.md >>comment.md"
+      - name: Post comment
+        env:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+        run: cml-send-comment --update comment.md
