@@ -41,6 +41,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: robot report
         run: |
+          ls -l
+          pwd
           export ROBOT_JAVA_ARGS=-Xmx6G
           robot diff --left wine.owl --right main/wine.owl > classification-diff.md
       - name: Upload diff
