@@ -41,6 +41,6 @@ jobs:
         run: diff grep-test.md main/grep-test.md > gitdiff
       # magic
       - name: magic test
-        if: grep -q never_in_taxon gitdiff
+        if: ${{ grep -q never_in_taxon gitdiff }}
         run: echo found   
       # Runs a single command using the runners shell
