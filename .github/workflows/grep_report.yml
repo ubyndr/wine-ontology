@@ -1,14 +1,11 @@
 name: Grep report
-
 # Controls when the workflow will run
 on:
   # Triggers the workflow on pull request events but only for the main branch
   pull_request:
     branches: [ main ]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "taxon_reporting"
@@ -16,34 +13,28 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     # container: obolibrary/odklite:v1.2.32
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out current branch
       - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      #- name: Run a one-line script
-      #  run: echo ${{ github.ref }}
-      # Runs a single command using the runners shell
-      - name: list directory content - report
-        run: |
-          ls -l
-          
       # Checks-out main branch under "main" directory
       - uses: actions/checkout@v2
         with:
           ref: main
           path: main
-      # Runs a single command using the runners shell
+      - name: create diff
+        id: diff
+        if: ${{ github.event.pull_request.base.sha }}
+        run: |
+          diff grep-test.md main/grep-test.md
+          diff grep-test.md main/grep-test.md > tempdiff
+          echo ::set-output name=diff::$(cat tempdiff)
       - name: create git diff
         id: gitdif
         if: ${{ github.event.pull_request.base.sha }}
         run: |
-          git branch
           git fetch origin main ${{ github.event.pull_request.base.sha }}
           git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff
-          git branch
           echo ::set-output name=diff::$(cat gitdiff)
       # magic
       - name: magic test
