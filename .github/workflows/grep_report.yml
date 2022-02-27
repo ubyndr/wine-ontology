@@ -42,6 +42,8 @@ jobs:
         run: | 
           echo ${GITHUB_HEAD_REF}
           diff grep-test.md main/grep-test.md > gitdiff
+          ls -l
+          cat gitdiff
           echo ::set-output name=diff::$(cat gitdiff)
       # magic
       - name: magic test
