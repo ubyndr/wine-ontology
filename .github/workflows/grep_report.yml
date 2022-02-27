@@ -40,10 +40,7 @@ jobs:
       - name: create git diff
         id: gitdif
         run: |
-          pwd
-          ls -l
-          echo ${GITHUB_HEAD_REF}
-          diff grep-test.md main/grep-test.md > gitdiff
+          git diff --name-only origin/main origin/${GITHUB_HEAD_REF} > gitdiff
           ls -l
           cat gitdiff
           echo ::set-output name=diff::$(cat gitdiff)
