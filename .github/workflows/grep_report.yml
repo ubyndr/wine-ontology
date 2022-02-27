@@ -37,11 +37,10 @@ jobs:
           path: main
       
       # Runs a single command using the runners shell
-      - name: list directory content - main
-        run: |
-          ls -l
-          ls -l main
+      - name: create git diff
+        run: diff grep-test.md main/grep-test.md > gitdiff
       # magic
       - name: magic test
-        run: diff grep-test.md main/grep-test.md | grep never_in_taxon   
+        if: grep -q never_in_taxon gitdiff
+        run: echo found   
       # Runs a single command using the runners shell
