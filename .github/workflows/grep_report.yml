@@ -43,8 +43,6 @@ jobs:
           git fetch origin main ${{ github.event.pull_request.base.sha }}
           git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff
           git branch
-          ls -l
-          cat gitdiff
           echo ::set-output name=diff::$(cat gitdiff)
       # magic
       - name: magic test
