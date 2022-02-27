@@ -40,7 +40,7 @@ jobs:
       - name: create git diff
         id: gitdif
         run: |
-          # git diff --name-only main ${GITHUB_HEAD_REF} > gitdiff
+          git diff --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff
           git branch
           ls -l
           cat gitdiff
