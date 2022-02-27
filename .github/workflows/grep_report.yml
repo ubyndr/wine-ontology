@@ -38,9 +38,13 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: create git diff
-        run: diff grep-test.md main/grep-test.md > gitdiff
+        id: gitdif
+        run: | 
+          echo ${GITHUB_HEAD_REF}
+          diff grep-test.md main/grep-test.md > gitdiff
+          echo ::set-output name=diff::$(cat gitdiff)
       # magic
       - name: magic test
-        if: contains(gitdiff, never_in_taxon)
+        if: contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)
         run: echo found   
       # Runs a single command using the runners shell
