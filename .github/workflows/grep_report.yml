@@ -30,13 +30,13 @@ jobs:
           diff grep-test.md main/grep-test.md | tee tempdiff.md
           echo ::set-output name=diff::$(cat tempdiff.md)
       - name: cancel if condition met
-        if: "!contains(${{ steps.diff.outputs.diff }}, 'never_in_taxon')"
+        if: "!contains(steps.diff.outputs.diff, 'never_in_taxon')"
         run: |
           echo Taxon constraint updates do not exist
           echo "STATUS=0" >> $GITHUB_ENV
           echo $STATUS
       - name: cancel if condition met
-        if: contains(${{ steps.diff.outputs.diff }}, 'never_in_taxon')
+        if: contains(steps.diff.outputs.diff, 'never_in_taxon')
         run: |
           echo Taxon constraint updates do exist
       - name: if control
