@@ -4,6 +4,8 @@ on:
   # Triggers the workflow on pull request events but only for the main branch
   pull_request:
     branches: [ main ]
+    paths:
+      - 'grep-test.md'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -15,12 +17,6 @@ jobs:
     # container: obolibrary/odklite:v1.2.32
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Check if the file has changed
-        id: isChanged
-        uses: tj-actions/changed-files@v2.1
-      - name: if the file had changed, do this
-        if: contains(steps.changed-files.outputs.modified_files, 'grep-test.md')
-        run: echo FILE HAS CHANGED
       # Checks-out current branch
       - uses: actions/checkout@v2
       # Checks-out main branch under "main" directory
