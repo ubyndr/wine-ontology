@@ -38,7 +38,6 @@ jobs:
     needs: is_changed
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    if: ${{ env.STATUS }} == 1
     # container: obolibrary/odklite:v1.2.32
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
