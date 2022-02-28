@@ -31,11 +31,8 @@ jobs:
           echo "STATUS=0" >> $GITHUB_ENV
           echo $STATUS
       - name: if control
-        if: contains(${{ steps.gitdif.outputs.diff }}, mahmut)
         run: |
-          echo Taxon constraint updates do exist
-          echo "STATUS=1" >> $GITHUB_ENV
-          echo $STATUS
+          echo "${{ steps.gitdif.outputs.diff }}"
   grep_reporting:
     needs: is_changed
     # The type of runner that the job will run on
