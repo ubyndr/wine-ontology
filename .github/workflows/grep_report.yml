@@ -40,11 +40,9 @@ jobs:
           git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff
           echo ::set-output name=diff::$(cat gitdiff)
       # exit magic
-      - name: exit if condition met
+      - name: cancellingif condition met
         if: "!contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)"
-        run: |
-          echo PR does not have any change in the file
-          exit 0
+        uses: andymckay/cancel-action@0.2
       # magic
       - name: magic test
         if: contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)
