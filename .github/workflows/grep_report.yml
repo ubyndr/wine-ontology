@@ -27,8 +27,6 @@ jobs:
         if: ${{ github.event.pull_request.base.sha }}
         run: |
           diff grep-test.md main/grep-test.md
-          diff grep-test.md main/grep-test.md > tempdiff.md
-          echo ::set-output name=diff::$(cat tempdiff.md)
       - name: create git diff
         id: gitdif
         if: ${{ github.event.pull_request.base.sha }}
