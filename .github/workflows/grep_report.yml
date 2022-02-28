@@ -23,7 +23,7 @@ jobs:
           git fetch origin main ${{ github.event.pull_request.base.sha }}
           git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff.md
           echo ::set-output name=diff::$(cat gitdiff.md)
-          echo ${{ gitdiff.md }}
+          cat gitdiff.md
       - name: cancel if condition met
         if: "!contains(steps.gitdif.outputs.diff, 'never_in_taxon')"
         run: |
