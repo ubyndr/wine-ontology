@@ -13,35 +13,24 @@ env:
 jobs:
   is_changed:
     runs-on: ubuntu-latest
-    # container: obolibrary/odklite:v1.2.32
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out current branch
       - uses: actions/checkout@v2
-      # Checks-out main branch under "main" directory
-      - uses: actions/checkout@v2
-        with:
-          ref: main
-          path: main
-      - name: create diff
-        id: diff
+      - name: create git diff
+        id: gitdif
         if: ${{ github.event.pull_request.base.sha }}
         run: |
-          diff grep-test.md main/grep-test.md | tee tempdiff.md
-          echo ::set-output name=diff::$(cat tempdiff.md)
+          git fetch origin main ${{ github.event.pull_request.base.sha }}
+          git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff.md
+          echo ::set-output name=diff::$(cat gitdiff.md)
       - name: cancel if condition met
-        if: "!contains(steps.diff.outputs.diff, 'never_in_taxon')"
+        if: "!contains(steps.gitdif.outputs.diff, 'never_in_taxon')"
         run: |
           echo Taxon constraint updates do not exist
           echo "STATUS=0" >> $GITHUB_ENV
-          echo $STATUS
       - name: cancel if condition met
         if: contains(steps.diff.outputs.diff, 'never_in_taxon')
-        run: |
-          echo Taxon constraint updates do exist
-      - name: if control
-        run: |
-          echo ${{ steps.diff.outputs.diff }}
+        run: echo Taxon constraint updates do exist
   grep_reporting:
     needs: is_changed
     # The type of runner that the job will run on
