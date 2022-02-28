@@ -22,9 +22,10 @@ jobs:
         run: |
           git fetch origin main ${{ github.event.pull_request.base.sha }}
           git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff
+          cat gitdiff
           echo ::set-output name=diff::$(cat gitdiff)
       - name: cancel if condition met
-        if: "!contains(${{ steps.gitdif.outputs.gitdiff }}, never_in_taxon)"
+        if: "!contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)"
         run: |
           echo Taxon constraint updates do not exist
           echo "STATUS=0" >> $GITHUB_ENV
