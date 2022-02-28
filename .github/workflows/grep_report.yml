@@ -25,10 +25,16 @@ jobs:
           cat gitdiff
           echo ::set-output name=diff::$(cat gitdiff)
       - name: cancel if condition met
-        if: "!contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)"
+        if: "!contains(${{ steps.gitdif.outputs.diff }}, +never_in_taxon)"
         run: |
           echo Taxon constraint updates do not exist
           echo "STATUS=0" >> $GITHUB_ENV
+          echo $STATUS
+      - name: if control
+        if: contains(${{ steps.gitdif.outputs.diff }}, +never_in_taxon)
+        run: |
+          echo Taxon constraint updates do exist
+          echo "STATUS=1" >> $GITHUB_ENV
           echo $STATUS
   grep_reporting:
     needs: is_changed
