@@ -21,9 +21,9 @@ jobs:
         if: ${{ github.event.pull_request.base.sha }}
         run: |
           git fetch origin main ${{ github.event.pull_request.base.sha }}
-          git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff
-          echo ::set-output name=diff::$(cat gitdiff)
-          grep never_in_taxon gitdiff
+          git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff.md
+          echo ::set-output name=diff::$(cat gitdiff.md)
+          grep never_in_taxon gitdiff.md
       - name: cancel if condition met
         if: "!contains(${{ steps.gitdif.outputs.diff }}, mahmut)"
         run: |
