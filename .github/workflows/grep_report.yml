@@ -31,9 +31,7 @@ jobs:
           echo "STATUS=0" >> $GITHUB_ENV
       - name: cancel if condition met
         if: contains(steps.gitdif.outputs.diff, 'never_in_taxon')
-        run: |
-          echo ${{ steps.gitdif.outputs.diff }}
-          echo Taxon constraint updates do exist $STATUS
+        run: echo Taxon constraint updates do exist $STATUS
   grep_reporting:
     needs: is_changed
     # The type of runner that the job will run on
