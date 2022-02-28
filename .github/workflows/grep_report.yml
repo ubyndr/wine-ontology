@@ -41,7 +41,7 @@ jobs:
           echo ::set-output name=diff::$(cat gitdiff)
       # exit magic
       - name: exit if condition met
-        if: ${{ !contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon) }}
+        if: "!contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)"
         run: exit 1
       # magic
       - name: magic test
