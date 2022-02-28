@@ -32,15 +32,16 @@ jobs:
       - name: cancel if condition met
         if: contains(steps.gitdif.outputs.diff, 'never_in_taxon')
         run: echo Taxon constraint updates do exist $STATUS
-      # Checks-out current branch
-      - uses: actions/checkout@v2
-        if: ${{ env.STATUS }} == 1
       # Checks-out main branch under "main" directory
       - uses: actions/checkout@v2
-        if: ${{ env.STATUS }} == 1
+        if: env.STATUS == 1
         with:
           ref: main
           path: main
+      - name: check dir
+        run: |
+          pwd
+          ls -l
       - name: do something
-        if: ${{ env.STATUS }} == 1
+        if: env.STATUS == 1
         run: echo brrrrr $STATUS
