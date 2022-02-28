@@ -15,6 +15,12 @@ jobs:
     # container: obolibrary/odklite:v1.2.32
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Check if the file has changed
+        id: isChanged
+        uses: tj-actions/changed-files@v2.1
+      - name: if the file had changed, do this
+        if: contains(steps.changed-files.outputs.modified_files, 'grep-test.md')
+        run: echo FILE HAS CHANGED
       # Checks-out current branch
       - uses: actions/checkout@v2
       # Checks-out main branch under "main" directory
