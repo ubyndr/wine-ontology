@@ -42,6 +42,7 @@ jobs:
         run: |
           pwd
           ls -l
+          cat grep-test.md
       - name: do something
         if: env.STATUS == 1
         run: echo brrrrr $STATUS
