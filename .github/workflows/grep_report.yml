@@ -45,15 +45,12 @@ jobs:
         id: check
         with:
           script: |
+            echo MAGIC
             const { owner, repo } = context.repo
-            if (!contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)) {
-              console.log('Cancelling ...');
-              const run_id = "${{ github.run_id }}";
-              await github.actions.cancelWorkflowRun({ owner, repo, run_id });
-              return 'stop'
-            } else {
-              return 'build'
-            }
+            console.log('Cancelling ...');
+            const run_id = "${{ github.run_id }}";
+            await github.actions.cancelWorkflowRun({ owner, repo, run_id });
+            return 'stop'
           result-encoding: string
       # magic
       - name: magic test
