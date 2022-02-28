@@ -29,7 +29,7 @@ jobs:
           echo Taxon constraint updates do not exist
           echo "STATUS=0" >> $GITHUB_ENV
       - name: cancel if condition met
-        if: contains(steps.diff.outputs.diff, 'never_in_taxon')
+        if: contains(steps.gitdif.outputs.diff, 'never_in_taxon')
         run: echo Taxon constraint updates do exist
   grep_reporting:
     needs: is_changed
