@@ -8,7 +8,8 @@ on:
       - 'grep-test.md'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+env:
+  STATUS: 1
 jobs:
   # This workflow contains a single job called "taxon_reporting"
   grep_reporting:
@@ -42,16 +43,18 @@ jobs:
       # exit magic
       - name: cancel if condition met
         if: "!contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)"
-        uses: andymckay/cancel-action@0.2
+        run: |
+          echo Taxon constraint updates do not exist
+          echo "STATUS=0" >> $GITHUB_ENV
       - name: Waiting for cancellation
-        run: sleep 15
+        run: sleep 10
       # magic
       - name: magic test
-        if: contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)
+        if: $STATUS==1
         run: echo found
       # magic cont.
       - name: magic test cont.
-        if: contains(${{ steps.diff.outputs.diff }}, never_in_taxon)
+        if: $STATUS==1
         run: |
           echo 'second magic test'
           echo found
