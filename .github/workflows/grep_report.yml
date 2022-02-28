@@ -47,9 +47,11 @@ jobs:
           echo Taxon constraint updates do not exist
           echo "STATUS=0" >> $GITHUB_ENV
           echo $STATUS
-          echo env.STATUS
+          echo $env.STATUS
       - name: env test
-        run: echo env.STATUS
+        run: |
+          echo $STATUS
+          echo $env.STATUS
       # magic
       - name: magic test
         if: env.STATUS==1
