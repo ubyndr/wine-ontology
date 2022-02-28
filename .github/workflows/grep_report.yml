@@ -32,7 +32,7 @@ jobs:
           echo $STATUS
       - name: if control
         run: |
-          grep never_in_taxon "${{ steps.gitdif.outputs.diff }}"
+          grep never_in_taxon ${{ steps.gitdif.outputs.diff }}
   grep_reporting:
     needs: is_changed
     # The type of runner that the job will run on
