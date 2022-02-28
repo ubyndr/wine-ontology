@@ -32,7 +32,6 @@ jobs:
         if: contains(steps.gitdif.outputs.diff, 'never_in_taxon')
         run: echo Taxon constraint updates do exist
   grep_reporting:
-    if: STATUS==1
     needs: is_changed
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -47,4 +46,4 @@ jobs:
           ref: main
           path: main
       - name: do something
-        run: echo something
+        run: echo $STATUS
