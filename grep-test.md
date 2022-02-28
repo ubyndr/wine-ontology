@@ -3,4 +3,4 @@ You probably have never considered this option before, but you have it every tim
 You make so many choices like this that you never even think about, but you have the choice with each one.  
 What are you going to do with this knowledge?  
 brrrrrrrrr  
-lets go. 
+lets go  

@@ -32,13 +32,6 @@ jobs:
       - name: cancel if condition met
         if: contains(steps.gitdif.outputs.diff, 'never_in_taxon')
         run: echo Taxon constraint updates do exist $STATUS
-  grep_reporting:
-    needs: is_changed
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    # container: obolibrary/odklite:v1.2.32
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
       # Checks-out current branch
       - uses: actions/checkout@v2
         if: ${{ env.STATUS }} == 1
@@ -50,4 +43,4 @@ jobs:
           path: main
       - name: do something
         if: ${{ env.STATUS }} == 1
-        run: echo brrrrr
+        run: echo brrrrr $STATUS
