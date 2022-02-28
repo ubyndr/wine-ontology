@@ -46,7 +46,7 @@ jobs:
         with:
           script: |
             const { owner, repo } = context.repo
-            if (myCondition) {
+            if (!contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)) {
               console.log('Cancelling ...');
               const run_id = "${{ github.run_id }}";
               await github.actions.cancelWorkflowRun({ owner, repo, run_id });
