@@ -50,11 +50,11 @@ jobs:
         run: sleep 10
       # magic
       - name: magic test
-        if: ${{ $STATUS==1 }}
+        if: env.STATUS==1
         run: echo found
       # magic cont.
       - name: magic test cont.
-        if: ${{ $STATUS==1 }}
+        if: env.STATUS==1
         run: |
           echo 'second magic test'
           echo found
