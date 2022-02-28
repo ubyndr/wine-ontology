@@ -39,6 +39,10 @@ jobs:
           git fetch origin main ${{ github.event.pull_request.base.sha }}
           git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff
           echo ::set-output name=diff::$(cat gitdiff)
+      # exit magic
+      - name: exit if condition met
+        if: ${{ !contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon) }}
+        run: exit 1
       # magic
       - name: magic test
         if: contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)
