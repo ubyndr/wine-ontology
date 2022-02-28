@@ -40,8 +40,10 @@ jobs:
     steps:
       # Checks-out current branch
       - uses: actions/checkout@v2
+        if: ${{ env.STATUS }} == 1
       # Checks-out main branch under "main" directory
       - uses: actions/checkout@v2
+        if: ${{ env.STATUS }} == 1
         with:
           ref: main
           path: main
