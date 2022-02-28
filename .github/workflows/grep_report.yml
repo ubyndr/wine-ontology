@@ -46,15 +46,8 @@ jobs:
         run: |
           echo Taxon constraint updates do not exist
           echo "STATUS=0" >> $GITHUB_ENV
-      - name: Waiting for cancellation
-        run: sleep 10
+          echo $STATUS
       # magic
       - name: magic test
         if: env.STATUS==1
         run: echo found
-      # magic cont.
-      - name: magic test cont.
-        if: env.STATUS==1
-        run: |
-          echo 'second magic test'
-          echo found
