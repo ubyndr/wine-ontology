@@ -23,7 +23,7 @@ jobs:
           git fetch origin main ${{ github.event.pull_request.base.sha }}
           git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff
           echo ::set-output name=diff::$(cat gitdiff)
-          grep never_in_taxon ${{ steps.gitdif.outputs.diff }}
+          grep never_in_taxon gitdiff
       - name: cancel if condition met
         if: "!contains(${{ steps.gitdif.outputs.diff }}, mahmut)"
         run: |
