@@ -31,6 +31,9 @@ jobs:
       - name: cancel if condition met
         if: contains(steps.gitdif.outputs.diff, 'never_in_taxon')
         run: echo Taxon constraint updates do exist
+      - name: brrrr
+        if: ${{ env.STATUS }} == 1
+        run: echo brrrrrrrrr
   grep_reporting:
     needs: is_changed
     # The type of runner that the job will run on
