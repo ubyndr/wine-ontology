@@ -40,9 +40,21 @@ jobs:
           git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff
           echo ::set-output name=diff::$(cat gitdiff)
       # exit magic
-      - name: cancellingif condition met
+      - uses: actions/github-script@v2
         if: "!contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)"
-        uses: andymckay/cancel-action@0.2
+        id: check
+        with:
+          script: |
+            const { owner, repo } = context.repo
+            if (myCondition) {
+              console.log('Cancelling ...');
+              const run_id = "${{ github.run_id }}";
+              await github.actions.cancelWorkflowRun({ owner, repo, run_id });
+              return 'stop'
+            } else {
+              return 'build'
+            }
+          result-encoding: string
       # magic
       - name: magic test
         if: contains(${{ steps.gitdif.outputs.diff }}, never_in_taxon)
