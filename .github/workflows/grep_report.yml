@@ -1,48 +1,87 @@
-name: Grep report
+# This is a basic workflow to help you get started with Actions
+
+name: Diff report
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on pull request events but only for the main branch
   pull_request:
     branches: [ main ]
     paths:
-      - 'grep-test.md'
+      - 'wine.owl'
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-env:
-  STATUS: 1
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  is_changed:
+  # This workflow contains a single job called "taxon_reporting"
+  taxon_reporting:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    container: obolibrary/odklite:v1.2.32
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out current branch
       - uses: actions/checkout@v2
-      - name: create git diff
-        id: gitdif
-        if: ${{ github.event.pull_request.base.sha }}
+
+      # Runs a single command using the runners shell
+      #- name: Run a one-line script
+      #  run: echo ${{ github.ref }}
+      # Runs a single command using the runners shell
+      - name: list directory content - report
         run: |
-          git fetch origin main ${{ github.event.pull_request.base.sha }}
-          git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} > gitdiff.md
-          echo ::set-output name=diff::$(cat gitdiff.md)
-          cat gitdiff.md
-      - name: cancel if condition met
-        if: "!contains(steps.gitdif.outputs.diff, 'never_in_taxon')"
-        run: |
-          echo Taxon constraint updates do not exist
-          echo "STATUS=0" >> $GITHUB_ENV
-      - name: cancel if condition met
-        if: contains(steps.gitdif.outputs.diff, 'never_in_taxon')
-        run: echo Taxon constraint updates do exist $STATUS
+          ls -l
+          
       # Checks-out main branch under "main" directory
       - uses: actions/checkout@v2
-        if: env.STATUS == 1
         with:
           ref: main
           path: main
-      - name: check dir
+      
+      # Runs a single command using the runners shell
+      - name: list directory content - main
+        id: mahmut
+        if: "!contains(steps.gitdiff.outputs.diff, 'never_in_taxon')"
         run: |
-          pwd
           ls -l
-          cat grep-test.md
-      - name: do something
-        if: env.STATUS == 1
-        run: echo brrrrr $STATUS
+          ls -l main
+          echo ::set-output name=ult::$(cat grep-test.md)
+      - name: ultimate check
+        if: "!contains(steps.mahmut.outputs.ult, 'never_in_taxon')"
+        run: |
+          echo Taxon constraint updates do not exist
+      - name: ultimate check 2
+        if: contains(steps.mahmut.outputs.ult, 'never_in_taxon')
+        run: |
+          echo Taxon constraint updates do exist
+      # magic
+      - name: magic test
+        run: diff wine.owl main/wine.owl | grep German   
+      # Runs a single command using the runners shell
+      - name: robot report
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left wine.owl --right main/wine.owl > classification-diff.md
+      - name: Upload diff
+        uses: actions/upload-artifact@v2
+        with:
+          name: classification-diff.md
+          path: classification-diff.md
+
+  post_comment:
+    needs: taxon_reporting
+    runs-on: ubuntu-latest
+    container: docker://dvcorg/cml-py3:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download diff
+        uses: actions/download-artifact@v2
+        with:
+          name: classification-diff.md
+          path: classification-diff.md
+      - name: Prepare comment
+        run: "echo \"Here's a diff of how these changes impact the classified ontology: \n\" >comment.md; cat classification-diff.md/classification-diff.md >>comment.md"
+      - name: Post comment
+        env:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+        run: cml-send-comment --update comment.md
