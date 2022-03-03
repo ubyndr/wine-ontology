@@ -25,14 +25,6 @@ jobs:
     steps:
       # Checks-out current branch
       - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      #- name: Run a one-line script
-      #  run: echo ${{ github.ref }}
-      # Runs a single command using the runners shell
-      - name: list directory content - report
-        run: |
-          ls -l
           
       # Checks-out main branch under "main" directory
       - uses: actions/checkout@v2
@@ -50,7 +42,7 @@ jobs:
         run: diff wine.owl main/wine.owl | grep German   
       # Runs a single command using the runners shell
       - name: robot report
-        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left wine.owl --right main/wine.owl > classification-diff.md
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left main/wine.owl --right wine.owl -f markdown -o classification-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:
@@ -72,5 +64,7 @@ jobs:
         run: "echo \"Here's a diff of how these changes impact the classified ontology: \n\" >comment.md; cat classification-diff.md/classification-diff.md >>comment.md"
       - name: Post comment
         env:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-        run: cml-send-comment --update comment.md
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        uses: NejcZdovc/comment-pr@v1.1.1
+        with:
+          file: "../../comment.md"
