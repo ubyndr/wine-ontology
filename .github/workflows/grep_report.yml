@@ -43,19 +43,26 @@ jobs:
       # Runs a single command using the runners shell
       - name: list directory content - main
         id: mahmut
-        if: "!contains(steps.gitdiff.outputs.diff, 'never_in_taxon')"
         run: |
           ls -l
           ls -l main
           echo ::set-output name=ult::$(cat grep-test.md)
-      - name: ultimate check
+      - name: ultimate check 1!
         if: "!contains(steps.mahmut.outputs.ult, 'never_in_taxon')"
         run: |
           echo Taxon constraint updates do not exist
-      - name: ultimate check 2
+      - name: ultimate check 1
         if: contains(steps.mahmut.outputs.ult, 'never_in_taxon')
         run: |
           echo Taxon constraint updates do exist
+      - name: ultimate check 2!
+        if: "!contains(steps.mahmut.outputs.ult, 'brrrrrrrrr')"
+        run: |
+          echo brrrrrrrrr do not exist
+      - name: ultimate check 2
+        if: contains(steps.mahmut.outputs.ult, 'brrrrrrrrr')
+        run: |
+          echo brrrrrrrrr do exist
       # magic
       - name: magic test
         run: diff wine.owl main/wine.owl | grep German   
