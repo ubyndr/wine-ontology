@@ -62,10 +62,7 @@ jobs:
       - name: ultimate check 2
         if: contains(steps.mahmut.outputs.ult, 'brrrrrrrrr')
         run: |
-          echo brrrrrrrrr do exist
-      # magic
-      - name: magic test
-        run: diff wine.owl main/wine.owl | grep German   
+          echo brrrrrrrrr do exist  
       # Runs a single command using the runners shell
       - name: robot report
         run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left wine.owl --right main/wine.owl > classification-diff.md
