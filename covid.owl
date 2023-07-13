@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://example.org/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000895">
+    <rdfs:label>naive thymus-derived CD4-positive, alpha-beta T cell</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/b1cd600d-1c0f-4e85-a85d-e34236f3627c">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>gamma-delta T cell</ns1:author_cell_type>
+    <ns1:cell_type>gamma-delta T cell</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000798"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/f4b4b37e-b483-4f44-859b-c751e16dd1ad">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>plasmablast</ns1:author_cell_type>
+    <ns1:cell_type>plasmablast</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000980"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/4b8ff138-0bad-4a1b-aff9-92da21634d49">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>double-positive T cell (DPT)</ns1:author_cell_type>
+    <ns1:cell_type>double-positive, alpha-beta thymocyte</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000809"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/3e393b61-3c80-4409-b017-4a6f720f23b0">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>CD8-positive, alpha-beta memory T cell</ns1:author_cell_type>
+    <ns1:cell_type>CD8-positive, alpha-beta memory T cell</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000909"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/1b3b0aca-ee31-4df8-80e8-cfeb32440e77">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>naive B cell</ns1:author_cell_type>
+    <ns1:cell_type>naive B cell</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000788"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/217e03d6-0a9e-48d9-8a43-b3c06946d91c">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>double negative T cell (DNT)</ns1:author_cell_type>
+    <ns1:cell_type>double negative thymocyte</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0002489"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000084">
+    <rdfs:label>T cell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000900">
+    <rdfs:label>naive thymus-derived CD8-positive, alpha-beta T cell</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/5dc46d63-edce-40e1-83a9-210c87558110">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>naive CD4+ T cell</ns1:author_cell_type>
+    <ns1:cell_type>naive thymus-derived CD4-positive, alpha-beta T cell</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000895"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/f7ad6a25-4aa3-416f-bb17-26cf3a8fbd1b">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>TissueResMemT</ns1:author_cell_type>
+    <ns1:cell_type>memory T cell</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000813"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/58cef26c-2cdf-4d45-a530-6a2ed01c1e3a">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>mucosal invariant T cell (MAIT)</ns1:author_cell_type>
+    <ns1:cell_type>mucosal invariant T cell</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000940"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/d69537f8-0736-4251-a24a-14200a9f921c">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>memory B cell</ns1:author_cell_type>
+    <ns1:cell_type>memory B cell</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000787"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000980">
+    <rdfs:label>plasmablast</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/CellSet">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/891ba501-b205-4462-b534-fff622d5e287">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>naive CD8+ T cell</ns1:author_cell_type>
+    <ns1:cell_type>naive thymus-derived CD8-positive, alpha-beta T cell</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000900"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/308dc301-b6f9-4adf-b5eb-dbcbc353dc8d">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>CD4-positive, alpha-beta memory T cell</ns1:author_cell_type>
+    <ns1:cell_type>CD4-positive, alpha-beta memory T cell</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000897"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002489">
+    <rdfs:label>double negative thymocyte</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000940">
+    <rdfs:label>mucosal invariant T cell</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000787">
+    <rdfs:label>memory B cell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000788">
+    <rdfs:label>naive B cell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000798">
+    <rdfs:label>gamma-delta T cell</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000815">
+    <rdfs:label>regulatory T cell</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000809">
+    <rdfs:label>double-positive, alpha-beta thymocyte</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000909">
+    <rdfs:label>CD8-positive, alpha-beta memory T cell</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000813"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000897">
+    <rdfs:label>CD4-positive, alpha-beta memory T cell</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000813"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/4955edf1-e4b8-46c0-97d2-5577084f5a1b">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>regulatory T cell</ns1:author_cell_type>
+    <ns1:cell_type>regulatory T cell</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000813">
+    <rdfs:label>memory T cell</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/536bbada-8f9b-422c-9924-205c570d91d6">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:author_cell_type>TCRVbeta13.1pos</ns1:author_cell_type>
+    <ns1:cell_type>T cell</ns1:cell_type>
+    <ns1:consists_of rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
+  </rdf:Description>
+</rdf:RDF>
