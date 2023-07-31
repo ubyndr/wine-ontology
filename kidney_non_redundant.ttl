@@ -1,0 +1,749 @@
+@prefix ns1: <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:CellSet a rdfs:Class .
+
+ns1:00ed25f6-f1ec-4eda-b1ae-0cfedb1ef567 a ns1:CellSet ;
+    ns1:subclass.full "Outer Medullary Collecting Duct Intercalated Cell Type A" ;
+    ns1:subclass.l2 "M-IC-A" ;
+    ns1:subclass.l3 "OMCD-IC-A" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:a2f9e17b-427c-4620-93c4-435c20356c52 .
+
+ns1:0d6a37b7-9598-4475-8797-a1d9f262cd0e a ns1:CellSet ;
+    ns1:subclass.full "Afferent / Efferent Arteriole Endothelial Cell" ;
+    ns1:subclass.l2 "EC-AEA" ;
+    ns1:subclass.l3 "EC-AEA" ;
+    ns1:subcluster_of ns1:19b0127b-c9df-40e8-b1d9-fb71f62839e1,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:0f8a03f6-5c78-4740-b98c-fc30fd611fe7 a ns1:CellSet ;
+    ns1:subclass.full "Cortical Collecting Duct Principal Cell" ;
+    ns1:subclass.l2 "C-PC" ;
+    ns1:subclass.l3 "CCD-PC" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:b3583f98-ed8a-472f-a73d-a559c8844b25 .
+
+ns1:0ffacbfa-6531-4e10-9053-f1a499e1a941 a ns1:CellSet ;
+    ns1:subclass.full "Adaptive / Maladaptive / Repairing Proximal Tubule Epithelial Cell" ;
+    ns1:subclass.l2 "aPT" ;
+    ns1:subclass.l3 "aPT" ;
+    ns1:subcluster_of ns1:8c4d2ec4-21d8-40fd-a9f8-200a76258853,
+        ns1:a9fbb9dd-4d67-46c5-8c1e-969ffad305bf .
+
+ns1:11717681-6e90-4e51-8096-ae3eca0f07a6 a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Podocyte" ;
+    ns1:subclass.l2 "dPOD" ;
+    ns1:subclass.l3 "dPOD" ;
+    ns1:subcluster_of ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7,
+        ns1:e8998560-cbf6-408f-aef1-10fbdeb1a57b .
+
+ns1:14316feb-3628-4978-9b01-d7f4bedfb8ab a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Cortical Intercalated Cell Type A" ;
+    ns1:subclass.l2 "dC-IC-A" ;
+    ns1:subclass.l3 "dC-IC-A" ;
+    ns1:subcluster_of ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7,
+        ns1:a2f9e17b-427c-4620-93c4-435c20356c52 .
+
+ns1:1658f03c-bca7-4baf-8957-5991d3a9533f a ns1:CellSet ;
+    ns1:subclass.l2 "aTAL2" ;
+    ns1:subclass.l3 "aTAL2" ;
+    ns1:subcluster_of ns1:46b92bd4-c3ec-4b44-a836-50da3a31cf6b .
+
+ns1:1866ec2d-7076-44fb-8792-2199767776af a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_1000597> ],
+        ns1:CellSet ;
+    ns1:cell_type "papillary tips cell" ;
+    ns1:subclass.full "Papillary Tip Epithelial Cell" ;
+    ns1:subclass.l1 "PapE" ;
+    ns1:subclass.l2 "PapE" ;
+    ns1:subclass.l3 "PapE" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:1a5f80d5-86ec-4e14-b403-06fd608426df a ns1:CellSet ;
+    ns1:subclass.full "Neutrophil" ;
+    ns1:subclass.l2 "N" ;
+    ns1:subclass.l3 "N" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d .
+
+ns1:1bfc1b72-eef9-423e-a352-85de52b56349 a ns1:CellSet ;
+    ns1:subclass.full "Podocyte" ;
+    ns1:subclass.l2 "POD" ;
+    ns1:subclass.l3 "POD" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e8998560-cbf6-408f-aef1-10fbdeb1a57b .
+
+ns1:1d7a385e-180b-47dc-bf56-d205aa084f04 a ns1:CellSet ;
+    ns1:subclass.full "Descending Thin Limb Cell Type 1" ;
+    ns1:subclass.l2 "DTL1" ;
+    ns1:subclass.l3 "DTL1" ;
+    ns1:subcluster_of ns1:15571f08-5174-443a-a904-e5d0a40d4f53,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:2347a728-8784-4852-acca-fa1af9ad21e4 a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Outer Medullary Collecting Duct Principal Cell" ;
+    ns1:subclass.l2 "dM-PC" ;
+    ns1:subclass.l3 "dOMCD-PC" ;
+    ns1:subcluster_of ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7,
+        ns1:b3583f98-ed8a-472f-a73d-a559c8844b25 .
+
+ns1:2468429d-0e3f-4906-9801-ab01813cd43b a ns1:CellSet ;
+    ns1:subclass.full "Fibroblast" ;
+    ns1:subclass.l2 "FIB" ;
+    ns1:subclass.l3 "FIB" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:a9071280-e1be-4605-81dd-0bfb56206f4b .
+
+ns1:2c4a657d-f275-4f74-9847-f2a42145c0de a ns1:CellSet ;
+    ns1:subclass.full "Proximal Tubule Epithelial Cell Segment 1 / Segment 2" ;
+    ns1:subclass.l2 "PT-S1/2" ;
+    ns1:subclass.l3 "PT-S1/2" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:8c4d2ec4-21d8-40fd-a9f8-200a76258853 .
+
+ns1:2ccbfdf1-0d20-485c-8827-c2e43aac1b93 a ns1:CellSet ;
+    ns1:subclass.full "Vascular Smooth Muscle Cell" ;
+    ns1:subclass.l2 "VSMC" ;
+    ns1:subclass.l3 "VSMC" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:a08c4115-728a-4f6e-a9c6-63f487563509 .
+
+ns1:2d5effa2-be41-47f4-97a6-34c06aab7ca8 a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_0002319> ],
+        ns1:CellSet ;
+    ns1:cell_type "neural cell" ;
+    ns1:class "neural cells" ;
+    ns1:subclass.full "Schwann Cell / Neural" ;
+    ns1:subclass.l1 "NEU" ;
+    ns1:subclass.l2 "SC/NEU" ;
+    ns1:subclass.l3 "SC/NEU" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:328cb556-1b6d-44bd-985b-37747663c53e a ns1:CellSet ;
+    ns1:subclass.full "Proximal Tubule Epithelial Cell Segment 3" ;
+    ns1:subclass.l2 "PT-S3" ;
+    ns1:subclass.l3 "PT-S3" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:8c4d2ec4-21d8-40fd-a9f8-200a76258853 .
+
+ns1:36453ea3-03af-4c06-9b94-a16bb99258da a ns1:CellSet ;
+    ns1:subclass.full "Descending Vasa Recta Endothelial Cell" ;
+    ns1:subclass.l2 "EC-DVR" ;
+    ns1:subclass.l3 "EC-DVR" ;
+    ns1:subcluster_of ns1:19b0127b-c9df-40e8-b1d9-fb71f62839e1,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:39a4739d-1382-435a-bfb6-a6e1d5d05c27 a ns1:CellSet ;
+    ns1:subclass.full "Cycling Distal Convoluted Tubule Cell" ;
+    ns1:subclass.l2 "cycDCT" ;
+    ns1:subclass.l3 "cycDCT" ;
+    ns1:subcluster_of ns1:37016273-db24-4968-9a4e-54ab248df29a,
+        ns1:cf1d7746-021f-4aa7-aea3-cd06337c3258,
+        ns1:ed816563-62df-4240-875b-7e209e2ff6f3 .
+
+ns1:3a83ab79-28f2-4c58-b2ee-0985656ff8bb a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Proximal Tubule Epithelial Cell" ;
+    ns1:subclass.l2 "dPT" ;
+    ns1:subclass.l3 "dPT" ;
+    ns1:subcluster_of ns1:8c4d2ec4-21d8-40fd-a9f8-200a76258853,
+        ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7 .
+
+ns1:3fc7cedb-1483-49b0-9e46-1ad5e5ceaf35 a ns1:CellSet ;
+    ns1:subclass.full "T Cell" ;
+    ns1:subclass.l2 "T" ;
+    ns1:subclass.l3 "T" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d .
+
+ns1:425c4b40-5b74-4579-ad7e-d39b423dcd54 a ns1:CellSet ;
+    ns1:subclass.full "Descending Thin Limb Cell Type 2" ;
+    ns1:subclass.l2 "DTL2" ;
+    ns1:subclass.l3 "DTL2" ;
+    ns1:subcluster_of ns1:15571f08-5174-443a-a904-e5d0a40d4f53,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:4c94711f-df8b-4e66-96fd-1b1ebce52d57 a ns1:CellSet ;
+    ns1:subclass.full "Ascending Thin Limb Cell" ;
+    ns1:subclass.l2 "ATL" ;
+    ns1:subclass.l3 "ATL" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:a5655ea7-e4f2-4f2b-a1ba-95350c17fee6 .
+
+ns1:4e583cfa-2e9a-4574-89e4-466036358e53 a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Medullary Thick Ascending Limb Cell" ;
+    ns1:subclass.l2 "dM-TAL" ;
+    ns1:subclass.l3 "dM-TAL" ;
+    ns1:subcluster_of ns1:5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd,
+        ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7 .
+
+ns1:5469392d-f78e-49ec-8ca1-ddfa1c563a50 a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Endothelial Cell" ;
+    ns1:subclass.l2 "dEC" ;
+    ns1:subclass.l3 "dEC" ;
+    ns1:subcluster_of ns1:19b0127b-c9df-40e8-b1d9-fb71f62839e1,
+        ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7 .
+
+ns1:5578078b-8805-4736-95da-e3921ee02f2a a ns1:CellSet ;
+    ns1:subclass.full "Cycling Connecting Tubule Cell" ;
+    ns1:subclass.l2 "cycCNT" ;
+    ns1:subclass.l3 "cycCNT" ;
+    ns1:subcluster_of ns1:37016273-db24-4968-9a4e-54ab248df29a,
+        ns1:94ef3cdc-b617-4e2f-bf3b-82a074560c11,
+        ns1:ed816563-62df-4240-875b-7e209e2ff6f3 .
+
+ns1:559fa2b0-b502-49dc-b5e7-fda6e9f203ce a ns1:CellSet ;
+    ns1:subclass.full "Descending Thin Limb Cell Type 3" ;
+    ns1:subclass.l2 "DTL3" ;
+    ns1:subclass.l3 "DTL3" ;
+    ns1:subcluster_of ns1:15571f08-5174-443a-a904-e5d0a40d4f53,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:672b0ce9-8dde-4b21-987b-9477a605de4f a ns1:CellSet ;
+    ns1:subclass.full "Medullary Fibroblast" ;
+    ns1:subclass.l2 "M-FIB" ;
+    ns1:subclass.l3 "M-FIB" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:a9071280-e1be-4605-81dd-0bfb56206f4b .
+
+ns1:6f70a932-a03d-4fb3-b0e0-947008b714b7 a ns1:CellSet ;
+    ns1:subclass.full "Plasmacytoid Dendritic Cell" ;
+    ns1:subclass.l2 "pDC" ;
+    ns1:subclass.l3 "pDC" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d .
+
+ns1:738f238e-1644-43e8-bf9a-cd666ef26c17 a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Peritubular Capilary Endothelial Cell" ;
+    ns1:subclass.l2 "dEC-PTC" ;
+    ns1:subclass.l3 "dEC-PTC" ;
+    ns1:subcluster_of ns1:19b0127b-c9df-40e8-b1d9-fb71f62839e1,
+        ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7 .
+
+ns1:76137f89-3fb3-468d-a23f-287d1fbc080d a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Inner Medullary Collecting Duct Cell" ;
+    ns1:subclass.l2 "dIMCD" ;
+    ns1:subclass.l3 "dIMCD" ;
+    ns1:subcluster_of ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7,
+        ns1:b3583f98-ed8a-472f-a73d-a559c8844b25 .
+
+ns1:76400953-37b9-404f-b12b-66ca01149eb4 a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Ascending Thin Limb Cell" ;
+    ns1:subclass.l2 "dATL" ;
+    ns1:subclass.l3 "dATL" ;
+    ns1:subcluster_of ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7,
+        ns1:a5655ea7-e4f2-4f2b-a1ba-95350c17fee6 .
+
+ns1:7e83663b-9307-43d6-b016-dfd61b44a99e a ns1:CellSet ;
+    ns1:subclass.full "Cycling Natural Killer Cell / Natural Killer T Cell" ;
+    ns1:subclass.l2 "cycNKC/T" ;
+    ns1:subclass.l3 "cycNKC/T" ;
+    ns1:subcluster_of ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d,
+        ns1:ed816563-62df-4240-875b-7e209e2ff6f3 .
+
+ns1:8036120c-079f-4a7e-9421-534371948eb6 a ns1:CellSet ;
+    ns1:subclass.full "Cycling Myofibroblast" ;
+    ns1:subclass.l2 "cycMYOF" ;
+    ns1:subclass.l3 "cycMYOF" ;
+    ns1:subcluster_of ns1:37016273-db24-4968-9a4e-54ab248df29a,
+        ns1:a9071280-e1be-4605-81dd-0bfb56206f4b,
+        ns1:ed816563-62df-4240-875b-7e209e2ff6f3 .
+
+ns1:8200a74b-aa71-4b9d-8416-012e2c681ac1 a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_1000452> ],
+        ns1:CellSet ;
+    ns1:cell_type "parietal epithelial cell" ;
+    ns1:subclass.full "Parietal Epithelial Cell" ;
+    ns1:subclass.l1 "PEC" ;
+    ns1:subclass.l2 "PEC" ;
+    ns1:subclass.l3 "PEC" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:8417e500-da81-4eb0-993e-def54f81e438 a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Connecting Tubule Cell" ;
+    ns1:subclass.l2 "dCNT" ;
+    ns1:subclass.l3 "dCNT" ;
+    ns1:subcluster_of ns1:94ef3cdc-b617-4e2f-bf3b-82a074560c11,
+        ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7 .
+
+ns1:84c97424-8485-4a44-93f7-651b4460b43d a ns1:CellSet ;
+    ns1:subclass.full "Adaptive / Maladaptive / Repairing Fibroblast" ;
+    ns1:subclass.l2 "aFIB" ;
+    ns1:subclass.l3 "aFIB" ;
+    ns1:subcluster_of ns1:f9ebe158-6c55-4e11-b41b-2e4908635122 .
+
+ns1:8996633a-6a9c-4d6b-b2c4-643da2cea1c2 a ns1:CellSet ;
+    ns1:subclass.full "Outer Medullary Collecting Duct Principal Cell" ;
+    ns1:subclass.l2 "M-PC" ;
+    ns1:subclass.l3 "OMCD-PC" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:b3583f98-ed8a-472f-a73d-a559c8844b25 .
+
+ns1:8bdea5a8-d200-4f29-9574-991fd9f8ed11 a ns1:CellSet ;
+    ns1:subclass.full "Vascular Smooth Muscle Cell / Pericyte" ;
+    ns1:subclass.l2 "VSMC/P" ;
+    ns1:subclass.l3 "VSMC/P" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:a08c4115-728a-4f6e-a9c6-63f487563509 .
+
+ns1:8ce4e34b-8bf2-4ca7-87d9-25b6ad216e29 a ns1:CellSet ;
+    ns1:subclass.full "Cycling Endothelial Cell" ;
+    ns1:subclass.l2 "cycEC" ;
+    ns1:subclass.l3 "cycEC" ;
+    ns1:subcluster_of ns1:19b0127b-c9df-40e8-b1d9-fb71f62839e1,
+        ns1:37016273-db24-4968-9a4e-54ab248df29a,
+        ns1:ed816563-62df-4240-875b-7e209e2ff6f3 .
+
+ns1:8d909ad6-6ef2-4522-b359-39d2e60dd152 a ns1:CellSet ;
+    ns1:subclass.full "Mesangial Cell" ;
+    ns1:subclass.l2 "MC" ;
+    ns1:subclass.l3 "MC" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:a08c4115-728a-4f6e-a9c6-63f487563509 .
+
+ns1:8de06e1a-c949-4069-83a9-bf182ad3a777 a ns1:CellSet ;
+    ns1:subclass.full "Intercalated Cell Type B" ;
+    ns1:subclass.l2 "IC-B" ;
+    ns1:subclass.l3 "IC-B" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:a2f9e17b-427c-4620-93c4-435c20356c52 .
+
+ns1:91c7706a-2e42-4bf5-a9a9-bddf42c97402 a ns1:CellSet ;
+    ns1:subclass.full "B Cell" ;
+    ns1:subclass.l2 "B" ;
+    ns1:subclass.l3 "B" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d .
+
+ns1:98701011-4017-4198-a18b-4844c893e113 a ns1:CellSet ;
+    ns1:subclass.full "Connecting Tubule Cell" ;
+    ns1:subclass.l3 "CNT" ;
+    ns1:subcluster_of ns1:3ed96edc-d4bf-48a7-8c21-01cede2d54b6 .
+
+ns1:98c07530-586f-422a-80ef-076f63de4705 a ns1:CellSet ;
+    ns1:subclass.full "Peritubular Capilary Endothelial Cell " ;
+    ns1:subclass.l2 "EC-PTC" ;
+    ns1:subclass.l3 "EC-PTC" ;
+    ns1:subcluster_of ns1:19b0127b-c9df-40e8-b1d9-fb71f62839e1,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:98e5d31d-6614-44ca-8250-0dfb5fd3a4cf a ns1:CellSet ;
+    ns1:subclass.full "Natural Killer Cell / Natural Killer T Cell" ;
+    ns1:subclass.l2 "NKC/T" ;
+    ns1:subclass.l3 "NKC/T" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d .
+
+ns1:9a87fa01-cd07-411b-bcae-718b0da092c0 a ns1:CellSet ;
+    ns1:subclass.full "Inner Medullary Collecting Duct Cell" ;
+    ns1:subclass.l2 "IMCD" ;
+    ns1:subclass.l3 "IMCD" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:b3583f98-ed8a-472f-a73d-a559c8844b25 .
+
+ns1:9ba3986a-3d0b-4f51-91cd-66a2e2c8b41f a ns1:CellSet ;
+    ns1:subclass.full "Connecting Tubule Principal Cell" ;
+    ns1:subclass.l3 "CNT-PC" ;
+    ns1:subcluster_of ns1:3ed96edc-d4bf-48a7-8c21-01cede2d54b6 .
+
+ns1:a073cb32-9c09-4c35-8aa6-d1b105cb44e7 a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Distal Convoluted Tubule Cell" ;
+    ns1:subclass.l2 "dDCT" ;
+    ns1:subclass.l3 "dDCT" ;
+    ns1:subcluster_of ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7,
+        ns1:cf1d7746-021f-4aa7-aea3-cd06337c3258 .
+
+ns1:a20ad8fc-f025-4123-9000-176ed93f68d2 a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Medullary Fibroblast" ;
+    ns1:subclass.l2 "dM-FIB" ;
+    ns1:subclass.l3 "dM-FIB" ;
+    ns1:subcluster_of ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7,
+        ns1:a9071280-e1be-4605-81dd-0bfb56206f4b .
+
+ns1:a33f0837-648a-48ab-b19c-8e5648a8a5ad a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Cortical Thick Ascending Limb Cell" ;
+    ns1:subclass.l2 "dC-TAL" ;
+    ns1:subclass.l3 "dC-TAL" ;
+    ns1:subcluster_of ns1:5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd,
+        ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7 .
+
+ns1:a3f65d77-9eba-4e52-8a14-4a20b3e9b2bd a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Descending Thin Limb Cell Type 3" ;
+    ns1:subclass.l2 "dDTL3" ;
+    ns1:subclass.l3 "dDTL3" ;
+    ns1:subcluster_of ns1:15571f08-5174-443a-a904-e5d0a40d4f53,
+        ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7 .
+
+ns1:a686d418-774e-47a1-a1ac-38d38ecef261 a ns1:CellSet ;
+    ns1:subclass.full "Connecting Tubule Intercalated Cell Type A" ;
+    ns1:subclass.l3 "CNT-IC-A" ;
+    ns1:subcluster_of ns1:12ce9a40-f81b-4fe3-b8e1-4464a951059c .
+
+ns1:a7ee258d-1a3b-4d40-98d2-646f9167270b a ns1:CellSet ;
+    ns1:subclass.full "Glomerular Capillary Endothelial Cell" ;
+    ns1:subclass.l2 "EC-GC" ;
+    ns1:subclass.l3 "EC-GC" ;
+    ns1:subcluster_of ns1:19b0127b-c9df-40e8-b1d9-fb71f62839e1,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:a9737d79-aed0-4595-8264-ef8d894b35cb a ns1:CellSet ;
+    ns1:subclass.full "Medullary Thick Ascending Limb Cell" ;
+    ns1:subclass.l2 "M-TAL" ;
+    ns1:subclass.l3 "M-TAL" ;
+    ns1:subcluster_of ns1:5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:aa9e4344-9a81-413f-9c73-b18ef253cffe a ns1:CellSet ;
+    ns1:subclass.full "Renin-positive Juxtaglomerular Granular Cell" ;
+    ns1:subclass.l2 "REN" ;
+    ns1:subclass.l3 "REN" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:a08c4115-728a-4f6e-a9c6-63f487563509 .
+
+ns1:b30b0658-c697-4038-a25e-761b3dc11637 a ns1:CellSet ;
+    ns1:subclass.full "Cycling Proximal Tubule Epithelial Cell" ;
+    ns1:subclass.l2 "cycPT" ;
+    ns1:subclass.l3 "cycPT" ;
+    ns1:subcluster_of ns1:37016273-db24-4968-9a4e-54ab248df29a,
+        ns1:8c4d2ec4-21d8-40fd-a9f8-200a76258853,
+        ns1:ed816563-62df-4240-875b-7e209e2ff6f3 .
+
+ns1:b3dc4cb5-9eb9-49ad-b11c-4095a3381466 a ns1:CellSet ;
+    ns1:subclass.full "Lymphatic Endothelial Cell" ;
+    ns1:subclass.l2 "EC-LYM" ;
+    ns1:subclass.l3 "EC-LYM" ;
+    ns1:subcluster_of ns1:19b0127b-c9df-40e8-b1d9-fb71f62839e1,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:b5396261-9224-41cd-9483-9f2af1203056 a ns1:CellSet ;
+    ns1:subclass.full "Myofibroblast" ;
+    ns1:subclass.l2 "MYOF" ;
+    ns1:subclass.l3 "MYOF" ;
+    ns1:subcluster_of ns1:f9ebe158-6c55-4e11-b41b-2e4908635122 .
+
+ns1:b58fe1c1-0940-47d4-bbbd-1aff936bcdb1 a ns1:CellSet ;
+    ns1:subclass.full "Macula Densa Cell" ;
+    ns1:subclass.l2 "MD" ;
+    ns1:subclass.l3 "MD" ;
+    ns1:subcluster_of ns1:5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:bc905a48-cc79-48f1-9917-61a68b770ab6 a ns1:CellSet ;
+    ns1:subclass.full "Ascending Vasa Recta Endothelial Cell" ;
+    ns1:subclass.l2 "EC-AVR" ;
+    ns1:subclass.l3 "EC-AVR" ;
+    ns1:subcluster_of ns1:19b0127b-c9df-40e8-b1d9-fb71f62839e1,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:bcd4a4bc-fea6-4000-88c7-e087376f90df a ns1:CellSet ;
+    ns1:subclass.full "Plasma Cell" ;
+    ns1:subclass.l2 "PL" ;
+    ns1:subclass.l3 "PL" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d .
+
+ns1:c01b7ebe-4587-49c5-a999-293ecaab3a03 a ns1:CellSet ;
+    ns1:state.l2 "transitioning" ;
+    ns1:subclass.full "Transitional Principal-Intercalated Cell" ;
+    ns1:subclass.l2 "tPC-IC" ;
+    ns1:subclass.l3 "tPC-IC" ;
+    ns1:subcluster_of ns1:37016273-db24-4968-9a4e-54ab248df29a,
+        ns1:a2f9e17b-427c-4620-93c4-435c20356c52 .
+
+ns1:c0d0cc66-0dd1-4654-bea6-6691ac6809ea a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Fibroblast" ;
+    ns1:subclass.l2 "dFIB" ;
+    ns1:subclass.l3 "dFIB" ;
+    ns1:subcluster_of ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7,
+        ns1:a9071280-e1be-4605-81dd-0bfb56206f4b .
+
+ns1:c579e814-2a78-4933-b47b-6623cfdbbf9d a ns1:CellSet ;
+    ns1:subclass.full "Cortical Collecting Duct Intercalated Cell Type A" ;
+    ns1:subclass.l3 "CCD-IC-A" ;
+    ns1:subcluster_of ns1:12ce9a40-f81b-4fe3-b8e1-4464a951059c .
+
+ns1:c6d98f2c-635a-4d5a-bb98-5ebebcb203e1 a ns1:CellSet ;
+    ns1:subclass.full "Cortical Thick Ascending Limb Cell" ;
+    ns1:subclass.l2 "C-TAL" ;
+    ns1:subclass.l3 "C-TAL" ;
+    ns1:subcluster_of ns1:5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd,
+        ns1:81141405-f235-433a-9a45-7ece5d19e21a .
+
+ns1:cd0503a8-ef12-4bdb-97f3-8cd26e115540 a ns1:CellSet ;
+    ns1:subclass.full "Cycling Mononuclear Phagocyte" ;
+    ns1:subclass.l2 "cycMNP" ;
+    ns1:subclass.l3 "cycMNP" ;
+    ns1:subcluster_of ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d,
+        ns1:ed816563-62df-4240-875b-7e209e2ff6f3 .
+
+ns1:d504723e-d8d3-40e0-9568-5d38ca6a274d a ns1:CellSet ;
+    ns1:subclass.l2 "aTAL1" ;
+    ns1:subclass.l3 "aTAL1" ;
+    ns1:subcluster_of ns1:46b92bd4-c3ec-4b44-a836-50da3a31cf6b .
+
+ns1:d770a60a-178f-4abf-b92a-5e4dbb030997 a ns1:CellSet ;
+    ns1:subclass.full "Non-classical Monocyte" ;
+    ns1:subclass.l2 "ncMON" ;
+    ns1:subclass.l3 "ncMON" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d .
+
+ns1:d8057a5e-a425-4e6f-bb55-00e419838319 a ns1:CellSet ;
+    ns1:subclass.full "Mast Cell" ;
+    ns1:subclass.l2 "MAST" ;
+    ns1:subclass.l3 "MAST" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d .
+
+ns1:d904e340-5e1e-4436-bd2a-8598025f6052 a ns1:CellSet ;
+    ns1:subclass.full "Degenerative Vascular Smooth Muscle Cell" ;
+    ns1:subclass.l2 "dVSMC" ;
+    ns1:subclass.l3 "dVSMC" ;
+    ns1:subcluster_of ns1:a08c4115-728a-4f6e-a9c6-63f487563509,
+        ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7 .
+
+ns1:e06ec426-fa59-4e54-b1b2-56be0c2df060 a ns1:CellSet ;
+    ns1:subclass.full "Distal Convoluted Tubule Cell Type 2" ;
+    ns1:subclass.l3 "DCT2" ;
+    ns1:subcluster_of ns1:0b1b14da-f4f5-45e3-8fd3-7e67e30618c8 .
+
+ns1:e4712de4-ef7c-4468-9b46-744de8855be7 a ns1:CellSet ;
+    ns1:subclass.full "Monocyte-derived Cell" ;
+    ns1:subclass.l2 "MDC" ;
+    ns1:subclass.l3 "MDC" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d .
+
+ns1:e98f3258-5b4a-4e6d-8633-c922313b794a a ns1:CellSet ;
+    ns1:subclass.full "Distal Convoluted Tubule Cell Type 1" ;
+    ns1:subclass.l3 "DCT1" ;
+    ns1:subcluster_of ns1:0b1b14da-f4f5-45e3-8fd3-7e67e30618c8 .
+
+ns1:e9e8e038-b5ef-4489-8922-e2e5f796857b a ns1:CellSet ;
+    ns1:subclass.full "M2 Macrophage" ;
+    ns1:subclass.l2 "MAC-M2" ;
+    ns1:subclass.l3 "MAC-M2" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d .
+
+ns1:fb841148-23af-462e-b18f-eaa97e1ac55a a ns1:CellSet ;
+    ns1:subclass.full "Classical Dendritic Cell" ;
+    ns1:subclass.l2 "cDC" ;
+    ns1:subclass.l3 "cDC" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d .
+
+ns1:subcluster_of a owl:ObjectProperty .
+
+<http://purl.obolibrary.org/obo/CL_0000115> a owl:Class ;
+    rdfs:label "endothelial cell" .
+
+<http://purl.obolibrary.org/obo/CL_0000653> a owl:Class ;
+    rdfs:label "podocyte" .
+
+<http://purl.obolibrary.org/obo/CL_0000738> a owl:Class ;
+    rdfs:label "leukocyte" .
+
+<http://purl.obolibrary.org/obo/CL_0002306> a owl:Class ;
+    rdfs:label "epithelial cell of proximal tubule" .
+
+<http://purl.obolibrary.org/obo/CL_0002319> a owl:Class ;
+    rdfs:label "neural cell" .
+
+<http://purl.obolibrary.org/obo/CL_1000452> a owl:Class ;
+    rdfs:label "parietal epithelial cell" .
+
+<http://purl.obolibrary.org/obo/CL_1000597> a owl:Class ;
+    rdfs:label "papillary tips cell" .
+
+<http://purl.obolibrary.org/obo/CL_1000692> a owl:Class ;
+    rdfs:label "kidney interstitial fibroblast" .
+
+<http://purl.obolibrary.org/obo/CL_1000768> a owl:Class ;
+    rdfs:label "kidney connecting tubule epithelial cell" .
+
+<http://purl.obolibrary.org/obo/CL_1000849> a owl:Class ;
+    rdfs:label "kidney distal convoluted tubule epithelial cell" .
+
+<http://purl.obolibrary.org/obo/CL_1001106> a owl:Class ;
+    rdfs:label "kidney loop of Henle thick ascending limb epithelial cell" .
+
+<http://purl.obolibrary.org/obo/CL_1001107> a owl:Class ;
+    rdfs:label "kidney loop of Henle thin ascending limb epithelial cell" .
+
+<http://purl.obolibrary.org/obo/CL_1001111> a owl:Class ;
+    rdfs:label "kidney loop of Henle thin descending limb epithelial cell" .
+
+<http://purl.obolibrary.org/obo/CL_1001318> a owl:Class ;
+    rdfs:label "renal interstitial pericyte" .
+
+<http://purl.obolibrary.org/obo/CL_1001431> a owl:Class ;
+    rdfs:label "kidney collecting duct principal cell" .
+
+<http://purl.obolibrary.org/obo/CL_1001432> a owl:Class ;
+    rdfs:label "kidney collecting duct intercalated cell" .
+
+ns1:0b1b14da-f4f5-45e3-8fd3-7e67e30618c8 a ns1:CellSet ;
+    ns1:subclass.l2 "DCT" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:cf1d7746-021f-4aa7-aea3-cd06337c3258 .
+
+ns1:12ce9a40-f81b-4fe3-b8e1-4464a951059c a ns1:CellSet ;
+    ns1:subclass.l2 "C-IC-A" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:a2f9e17b-427c-4620-93c4-435c20356c52 .
+
+ns1:3ed96edc-d4bf-48a7-8c21-01cede2d54b6 a ns1:CellSet ;
+    ns1:subclass.l2 "CNT" ;
+    ns1:subcluster_of ns1:81141405-f235-433a-9a45-7ece5d19e21a,
+        ns1:94ef3cdc-b617-4e2f-bf3b-82a074560c11 .
+
+ns1:46b92bd4-c3ec-4b44-a836-50da3a31cf6b a ns1:CellSet ;
+    ns1:subclass.full "Adaptive / Maladaptive / Repairing Thick Ascending Limb Cell" ;
+    ns1:subcluster_of ns1:5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd,
+        ns1:a9fbb9dd-4d67-46c5-8c1e-969ffad305bf .
+
+ns1:a5655ea7-e4f2-4f2b-a1ba-95350c17fee6 a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_1001107> ],
+        ns1:CellSet ;
+    ns1:cell_type "kidney loop of Henle thin ascending limb epithelial cell" ;
+    ns1:subclass.l1 "ATL" ;
+    ns1:subcluster_of ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:a9fbb9dd-4d67-46c5-8c1e-969ffad305bf a ns1:CellSet ;
+    ns1:state.l2 "adaptive - epi" ;
+    ns1:subcluster_of ns1:37016273-db24-4968-9a4e-54ab248df29a,
+        ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:bc9d5385-f421-4e1f-a7d9-cd217cf421c3 a ns1:CellSet ;
+    ns1:class "stroma cells" .
+
+ns1:d8ffcfac-cb6e-456c-bffd-21e6f5955f32 a ns1:CellSet ;
+    ns1:state "reference" .
+
+ns1:e8998560-cbf6-408f-aef1-10fbdeb1a57b a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_0000653> ],
+        ns1:CellSet ;
+    ns1:cell_type "podocyte" ;
+    ns1:subclass.l1 "POD" ;
+    ns1:subcluster_of ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:f9ebe158-6c55-4e11-b41b-2e4908635122 a ns1:CellSet ;
+    ns1:state.l2 "adaptive - str" ;
+    ns1:subcluster_of ns1:37016273-db24-4968-9a4e-54ab248df29a,
+        ns1:a9071280-e1be-4605-81dd-0bfb56206f4b .
+
+ns1:94ef3cdc-b617-4e2f-bf3b-82a074560c11 a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_1000768> ],
+        ns1:CellSet ;
+    ns1:cell_type "kidney connecting tubule epithelial cell" ;
+    ns1:subclass.l1 "CNT" ;
+    ns1:subcluster_of ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:cf1d7746-021f-4aa7-aea3-cd06337c3258 a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_1000849> ],
+        ns1:CellSet ;
+    ns1:cell_type "kidney distal convoluted tubule epithelial cell" ;
+    ns1:subclass.l1 "DCT" ;
+    ns1:subcluster_of ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:15571f08-5174-443a-a904-e5d0a40d4f53 a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_1001111> ],
+        ns1:CellSet ;
+    ns1:cell_type "kidney loop of Henle thin descending limb epithelial cell" ;
+    ns1:subclass.l1 "DTL" ;
+    ns1:subcluster_of ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:8c4d2ec4-21d8-40fd-a9f8-200a76258853 a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_0002306> ],
+        ns1:CellSet ;
+    ns1:cell_type "epithelial cell of proximal tubule" ;
+    ns1:subclass.l1 "PT" ;
+    ns1:subcluster_of ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:a08c4115-728a-4f6e-a9c6-63f487563509 a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_1001318> ],
+        ns1:CellSet ;
+    ns1:cell_type "renal interstitial pericyte" ;
+    ns1:subclass.l1 "VSM/P" ;
+    ns1:subcluster_of ns1:bc9d5385-f421-4e1f-a7d9-cd217cf421c3 .
+
+ns1:a2f9e17b-427c-4620-93c4-435c20356c52 a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_1001432> ],
+        ns1:CellSet ;
+    ns1:cell_type "kidney collecting duct intercalated cell" ;
+    ns1:subclass.l1 "IC" ;
+    ns1:subcluster_of ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:b3583f98-ed8a-472f-a73d-a559c8844b25 a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_1001431> ],
+        ns1:CellSet ;
+    ns1:cell_type "kidney collecting duct principal cell" ;
+    ns1:subclass.l1 "PC" ;
+    ns1:subcluster_of ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_1001106> ],
+        ns1:CellSet ;
+    ns1:cell_type "kidney loop of Henle thick ascending limb epithelial cell" ;
+    ns1:subclass.l1 "TAL" ;
+    ns1:subcluster_of ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 .
+
+ns1:a9071280-e1be-4605-81dd-0bfb56206f4b a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_1000692> ],
+        ns1:CellSet ;
+    ns1:cell_type "kidney interstitial fibroblast" ;
+    ns1:subclass.l1 "FIB" ;
+    ns1:subcluster_of ns1:bc9d5385-f421-4e1f-a7d9-cd217cf421c3 .
+
+ns1:ed816563-62df-4240-875b-7e209e2ff6f3 a ns1:CellSet ;
+    ns1:state.l2 "cycling" .
+
+ns1:19b0127b-c9df-40e8-b1d9-fb71f62839e1 a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_0000115> ],
+        ns1:CellSet ;
+    ns1:cell_type "endothelial cell" ;
+    ns1:class "endothelial cells" ;
+    ns1:subclass.l1 "EC" .
+
+ns1:37016273-db24-4968-9a4e-54ab248df29a a ns1:CellSet ;
+    ns1:state "altered" .
+
+ns1:d5d17d1b-9b57-436d-aa04-ef3ea8461997 a ns1:CellSet ;
+    ns1:class "epithelial cells" .
+
+ns1:e83a76a6-ad5e-4601-bfb1-d089504af11d a [ a owl:Restriction ;
+            owl:onProperty ns1:consist_of ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/CL_0000738> ],
+        ns1:CellSet ;
+    ns1:cell_type "leukocyte" ;
+    ns1:class "immune cells" ;
+    ns1:subclass.l1 "IMM" ;
+    ns1:subcluster_of ns1:d8ffcfac-cb6e-456c-bffd-21e6f5955f32 .
+
+ns1:a17404bf-c8e7-4909-9da3-8559d2bdfdf7 a ns1:CellSet ;
+    ns1:state.l2 "degenerative" ;
+    ns1:subcluster_of ns1:37016273-db24-4968-9a4e-54ab248df29a .
+
+ns1:81141405-f235-433a-9a45-7ece5d19e21a a ns1:CellSet ;
+    ns1:state.l2 "reference" ;
+    ns1:subcluster_of ns1:d8ffcfac-cb6e-456c-bffd-21e6f5955f32 .
+
