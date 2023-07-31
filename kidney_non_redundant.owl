@@ -5,1065 +5,917 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://example.org/1f1e20df-37ee-4bbf-b269-2601e28e6871">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Inner Medullary Collecting Duct Cell</ns1:subclass.full>
-    <ns1:subclass.l3>dIMCD</ns1:subclass.l3>
-    <ns1:subclass.l2>dIMCD</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/3ac24534-d638-4d19-b4b6-588e1a8c8023"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/0eda8de7-6f71-4d0e-8988-8edc03182ff9">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Mast Cell</ns1:subclass.full>
-    <ns1:subclass.l3>MAST</ns1:subclass.l3>
-    <ns1:subclass.l2>MAST</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/60a6e2b5-6645-40d4-b4dc-606f7ce9b6c5">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Mesangial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>MC</ns1:subclass.l3>
-    <ns1:subclass.l2>MC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/4f09f1e9-4b02-4446-90ae-8f56bb0f4783"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/b5e2bacf-dacc-4a7b-a8a3-751847e5bfb2">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.l2>DCT</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/e13349c6-6d58-4d99-b5e6-c19a775ec4f1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd4c5456cc47d4e7cb45bcd866eb0e71b">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001107"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/98fd82fd-538f-4d34-b7f0-a76c9f34bf19">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Fibroblast</ns1:subclass.full>
-    <ns1:subclass.l3>dFIB</ns1:subclass.l3>
-    <ns1:subclass.l2>dFIB</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ceb01843-ca2e-446f-a7e4-2d81c3cbf74b"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/afd40614-79af-4bbe-ac4a-f25a762bbe26">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Cortical Collecting Duct Principal Cell</ns1:subclass.full>
-    <ns1:subclass.l3>CCD-PC</ns1:subclass.l3>
-    <ns1:subclass.l2>C-PC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/3ac24534-d638-4d19-b4b6-588e1a8c8023"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/d952f196-ab75-4cc4-b824-57e026d1831c">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>T Cell</ns1:subclass.full>
-    <ns1:subclass.l3>T</ns1:subclass.l3>
-    <ns1:subclass.l2>T</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/0cb86b3a-6a7a-446d-9672-343b445c4838">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Distal Convoluted Tubule Cell Type 2</ns1:subclass.full>
-    <ns1:subclass.l3>DCT2</ns1:subclass.l3>
-    <ns1:subcluster_of rdf:resource="http://example.org/b5e2bacf-dacc-4a7b-a8a3-751847e5bfb2"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/e13349c6-6d58-4d99-b5e6-c19a775ec4f1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/e7cb5db5-4566-43b7-beb0-242ebed09abc">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Renin-positive Juxtaglomerular Granular Cell</ns1:subclass.full>
-    <ns1:subclass.l3>REN</ns1:subclass.l3>
-    <ns1:subclass.l2>REN</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/4f09f1e9-4b02-4446-90ae-8f56bb0f4783"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/6f97a690-617f-4ac5-9803-18d3d14ac4a9">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="N2781bfc029b146d78cd6be65ed872ee7"/>
-    <ns1:cell_type>papillary tips cell</ns1:cell_type>
-    <ns1:subclass.full>Papillary Tip Epithelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>PapE</ns1:subclass.l3>
-    <ns1:subclass.l2>PapE</ns1:subclass.l2>
-    <ns1:subclass.l1>PapE</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N2781bfc029b146d78cd6be65ed872ee7">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1000597"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/5882d147-f39a-414e-9f3d-798c71061d19">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Cycling Natural Killer Cell / Natural Killer T Cell</ns1:subclass.full>
-    <ns1:subclass.l3>cycNKC/T</ns1:subclass.l3>
-    <ns1:subclass.l2>cycNKC/T</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/a809a636-c18e-4003-afaf-7bedf9eecaed"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:state>altered</ns1:state>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/4ec90652-3a1a-46e1-ae71-eadb3eef35b6">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.l2>aTAL2</ns1:subclass.l2>
-    <ns1:subclass.l3>aTAL2</ns1:subclass.l3>
-    <ns1:subcluster_of rdf:resource="http://example.org/6b818c04-ae5d-455b-97ad-376d259cfa2c"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/e5359ad3-942f-439b-a5ae-79670d66c05a"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/966f6844-4ebf-4de9-b11c-a091e5d57e63"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/8970669a-7b71-4aeb-a54b-ca1d84c6ab61">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Ascending Vasa Recta Endothelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>EC-AVR</ns1:subclass.l3>
-    <ns1:subclass.l2>EC-AVR</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ef19e901-7479-42b9-acc3-3e1862d7fc84"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/5523b384-1a36-4e9b-a5c2-2cb9d8c1f936">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Vascular Smooth Muscle Cell</ns1:subclass.full>
-    <ns1:subclass.l3>dVSMC</ns1:subclass.l3>
-    <ns1:subclass.l2>dVSMC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/4f09f1e9-4b02-4446-90ae-8f56bb0f4783"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/54b96d0a-e992-47f9-af9c-a60557146edd">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Medullary Thick Ascending Limb Cell</ns1:subclass.full>
-    <ns1:subclass.l3>M-TAL</ns1:subclass.l3>
-    <ns1:subclass.l2>M-TAL</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/e5359ad3-942f-439b-a5ae-79670d66c05a"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/f0e7a334-70d8-4fd8-b1b0-b10203ded07c">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Glomerular Capillary Endothelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>EC-GC</ns1:subclass.l3>
-    <ns1:subclass.l2>EC-GC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ef19e901-7479-42b9-acc3-3e1862d7fc84"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/4f09f1e9-4b02-4446-90ae-8f56bb0f4783">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="Nb96d743db4d34655b257eba05eeac5f9"/>
-    <ns1:cell_type>renal interstitial pericyte</ns1:cell_type>
-    <ns1:subclass.l1>VSM/P</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/298c996d-c5d7-426d-9795-2e835b27457a">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Distal Convoluted Tubule Cell Type 1</ns1:subclass.full>
-    <ns1:subclass.l3>DCT1</ns1:subclass.l3>
-    <ns1:subcluster_of rdf:resource="http://example.org/b5e2bacf-dacc-4a7b-a8a3-751847e5bfb2"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/e13349c6-6d58-4d99-b5e6-c19a775ec4f1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/87a01c15-d35b-42d5-8d92-3bfdbd344cd4">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Proximal Tubule Epithelial Cell Segment 1 / Segment 2</ns1:subclass.full>
-    <ns1:subclass.l3>PT-S1/2</ns1:subclass.l3>
-    <ns1:subclass.l2>PT-S1/2</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/b66bcc9c-63d0-44a7-ae19-49158df3fe2d"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/7c35b64f-4bf3-4927-b863-2c4369ffdc3e">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Inner Medullary Collecting Duct Cell</ns1:subclass.full>
-    <ns1:subclass.l3>IMCD</ns1:subclass.l3>
-    <ns1:subclass.l2>IMCD</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/3ac24534-d638-4d19-b4b6-588e1a8c8023"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/7b2b3a8c-8e63-4173-b944-d4c62ac149cd">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Connecting Tubule Cell</ns1:subclass.full>
-    <ns1:subclass.l3>CNT</ns1:subclass.l3>
-    <ns1:subcluster_of rdf:resource="http://example.org/91d45e66-1c58-41dc-be41-22930be11af8"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/75101bdd-271d-415d-8879-b89dbf17eac2"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/793806b6-f7d4-44ee-9448-de2ac54dea0e">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.l2>aTAL1</ns1:subclass.l2>
-    <ns1:subclass.l3>aTAL1</ns1:subclass.l3>
-    <ns1:subcluster_of rdf:resource="http://example.org/6b818c04-ae5d-455b-97ad-376d259cfa2c"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/e5359ad3-942f-439b-a5ae-79670d66c05a"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/966f6844-4ebf-4de9-b11c-a091e5d57e63"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/a809a636-c18e-4003-afaf-7bedf9eecaed">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:state.l2>cycling</ns1:state.l2>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/64126cea-1c7c-49f2-a7f1-c0c3682ad2ce">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Podocyte</ns1:subclass.full>
-    <ns1:subclass.l3>POD</ns1:subclass.l3>
-    <ns1:subclass.l2>POD</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/b5a399dc-3d1f-4a92-bfe0-b98530535f06"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/c850c893-a907-47ce-af3d-6910c3a6b31b">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Ascending Thin Limb Cell</ns1:subclass.full>
-    <ns1:subclass.l3>dATL</ns1:subclass.l3>
-    <ns1:subclass.l2>dATL</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/3daee98c-4215-443b-b280-aa8e7594472c"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/b2339084-f3cb-43a1-bb5a-b2a022f2ef22">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="N95d248e4ecca429c8d082065ff55447f"/>
-    <ns1:cell_type>parietal epithelial cell</ns1:cell_type>
-    <ns1:subclass.full>Parietal Epithelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>PEC</ns1:subclass.l3>
-    <ns1:subclass.l2>PEC</ns1:subclass.l2>
-    <ns1:subclass.l1>PEC</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:state>reference</ns1:state>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/f7cbbe1b-31ac-44e6-8443-d458b18dbdef">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Adaptive / Maladaptive / Repairing Fibroblast</ns1:subclass.full>
-    <ns1:subclass.l3>aFIB</ns1:subclass.l3>
-    <ns1:subclass.l2>aFIB</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ceb01843-ca2e-446f-a7e4-2d81c3cbf74b"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/d70aee7e-d1d8-4410-892a-173748ec403b"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/374c1e45-a215-4d9f-a6fa-0c1bdb84abef">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Adaptive / Maladaptive / Repairing Proximal Tubule Epithelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>aPT</ns1:subclass.l3>
-    <ns1:subclass.l2>aPT</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/b66bcc9c-63d0-44a7-ae19-49158df3fe2d"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/966f6844-4ebf-4de9-b11c-a091e5d57e63"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/c5d74b43-4b9a-4fc6-8296-62616ea9470d">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Distal Convoluted Tubule Cell</ns1:subclass.full>
-    <ns1:subclass.l3>dDCT</ns1:subclass.l3>
-    <ns1:subclass.l2>dDCT</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/e13349c6-6d58-4d99-b5e6-c19a775ec4f1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/91d45e66-1c58-41dc-be41-22930be11af8">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.l2>CNT</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/75101bdd-271d-415d-8879-b89dbf17eac2"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/81acf873-fe52-44dd-8078-e7551a1f5091">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Outer Medullary Collecting Duct Principal Cell</ns1:subclass.full>
-    <ns1:subclass.l3>dOMCD-PC</ns1:subclass.l3>
-    <ns1:subclass.l2>dM-PC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/3ac24534-d638-4d19-b4b6-588e1a8c8023"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/6aa3c8ec-0c72-4ddb-b010-cf456cb9335c">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Connecting Tubule Intercalated Cell Type A</ns1:subclass.full>
-    <ns1:subclass.l3>CNT-IC-A</ns1:subclass.l3>
-    <ns1:subcluster_of rdf:resource="http://example.org/aaba7c80-ca1d-4fa0-b2e0-29a64c7d0e6a"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/7ba5f441-d77d-41e5-a6dc-520b8e45165e"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/5667c067-cd3e-4b9f-9584-3c0bf7a4a078">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Afferent / Efferent Arteriole Endothelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>EC-AEA</ns1:subclass.l3>
-    <ns1:subclass.l2>EC-AEA</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ef19e901-7479-42b9-acc3-3e1862d7fc84"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/3c6d1d7d-4d35-4325-aa2c-bd319539a8a0">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Intercalated Cell Type B</ns1:subclass.full>
-    <ns1:subclass.l3>IC-B</ns1:subclass.l3>
-    <ns1:subclass.l2>IC-B</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/7ba5f441-d77d-41e5-a6dc-520b8e45165e"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/fa9f5def-f21c-41bb-9716-0955a49d5be5">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Proximal Tubule Epithelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>dPT</ns1:subclass.l3>
-    <ns1:subclass.l2>dPT</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/b66bcc9c-63d0-44a7-ae19-49158df3fe2d"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/278c6cb3-5716-41e5-a2f8-47ac38535a04">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Cycling Myofibroblast</ns1:subclass.full>
-    <ns1:subclass.l3>cycMYOF</ns1:subclass.l3>
-    <ns1:subclass.l2>cycMYOF</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ceb01843-ca2e-446f-a7e4-2d81c3cbf74b"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/a809a636-c18e-4003-afaf-7bedf9eecaed"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/048ccc07-cb40-427b-842d-035f67e5757f">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:state.l2>transitioning</ns1:state.l2>
-    <ns1:subclass.full>Transitional Principal-Intercalated Cell</ns1:subclass.full>
-    <ns1:subclass.l3>tPC-IC</ns1:subclass.l3>
-    <ns1:subclass.l2>tPC-IC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/7ba5f441-d77d-41e5-a6dc-520b8e45165e"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bd5d1546-895b-47c6-b877-ddc9c8c610c3">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Outer Medullary Collecting Duct Principal Cell</ns1:subclass.full>
-    <ns1:subclass.l3>OMCD-PC</ns1:subclass.l3>
-    <ns1:subclass.l2>M-PC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/3ac24534-d638-4d19-b4b6-588e1a8c8023"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/4dc2a3c0-1d84-4aec-8053-07f2ae02f07e">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Non-classical Monocyte</ns1:subclass.full>
-    <ns1:subclass.l3>ncMON</ns1:subclass.l3>
-    <ns1:subclass.l2>ncMON</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/985889e5-ffee-4627-83ce-30f830ddc12c">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Natural Killer Cell / Natural Killer T Cell</ns1:subclass.full>
-    <ns1:subclass.l3>NKC/T</ns1:subclass.l3>
-    <ns1:subclass.l2>NKC/T</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/47d78102-3621-4854-a6ef-98f9e26af8b3">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Descending Thin Limb Cell Type 1</ns1:subclass.full>
-    <ns1:subclass.l3>DTL1</ns1:subclass.l3>
-    <ns1:subclass.l2>DTL1</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/626a2d4a-40bf-4083-8809-4e152beaaa45"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/6a5d5bf0-585f-44d7-ba44-48b3caca8d54">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Cortical Collecting Duct Intercalated Cell Type A</ns1:subclass.full>
-    <ns1:subclass.l3>CCD-IC-A</ns1:subclass.l3>
-    <ns1:subcluster_of rdf:resource="http://example.org/aaba7c80-ca1d-4fa0-b2e0-29a64c7d0e6a"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/7ba5f441-d77d-41e5-a6dc-520b8e45165e"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/7717838c-c25c-4dad-bec7-007109559a0d">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Descending Thin Limb Cell Type 3</ns1:subclass.full>
-    <ns1:subclass.l3>DTL3</ns1:subclass.l3>
-    <ns1:subclass.l2>DTL3</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/626a2d4a-40bf-4083-8809-4e152beaaa45"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/b5a399dc-3d1f-4a92-bfe0-b98530535f06">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="Na4f03d64a92049048031f27c10025836"/>
-    <ns1:cell_type>podocyte</ns1:cell_type>
-    <ns1:subclass.l1>POD</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/823a88ee-673d-42c7-ae06-081c26f735ef">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Macula Densa Cell</ns1:subclass.full>
-    <ns1:subclass.l3>MD</ns1:subclass.l3>
-    <ns1:subclass.l2>MD</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/e5359ad3-942f-439b-a5ae-79670d66c05a"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/6b9d0b2e-829f-4e84-bfe9-a1671c669264">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Cycling Endothelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>cycEC</ns1:subclass.l3>
-    <ns1:subclass.l2>cycEC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ef19e901-7479-42b9-acc3-3e1862d7fc84"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/a809a636-c18e-4003-afaf-7bedf9eecaed"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/3717d22b-4fa9-40ee-b26b-f7f7f8e892a9">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Cycling Connecting Tubule Cell</ns1:subclass.full>
-    <ns1:subclass.l3>cycCNT</ns1:subclass.l3>
-    <ns1:subclass.l2>cycCNT</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/75101bdd-271d-415d-8879-b89dbf17eac2"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/a809a636-c18e-4003-afaf-7bedf9eecaed"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/f3f9e983-f764-4f96-8c2b-24d92e246c6e">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Medullary Thick Ascending Limb Cell</ns1:subclass.full>
-    <ns1:subclass.l3>dM-TAL</ns1:subclass.l3>
-    <ns1:subclass.l2>dM-TAL</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/e5359ad3-942f-439b-a5ae-79670d66c05a"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/695d456e-4a9a-49ae-b971-331657f3e061">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Monocyte-derived Cell</ns1:subclass.full>
-    <ns1:subclass.l3>MDC</ns1:subclass.l3>
-    <ns1:subclass.l2>MDC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/e4af75ef-1513-4c2f-bcf0-4da33dbf30be">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Outer Medullary Collecting Duct Intercalated Cell Type A</ns1:subclass.full>
-    <ns1:subclass.l3>OMCD-IC-A</ns1:subclass.l3>
-    <ns1:subclass.l2>M-IC-A</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/7ba5f441-d77d-41e5-a6dc-520b8e45165e"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd46ac347323c4a99b75a00b4a016415d">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001432"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/ede30a85-86c9-4e6d-88a7-5a124095f72a">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Vascular Smooth Muscle Cell / Pericyte</ns1:subclass.full>
-    <ns1:subclass.l3>VSMC/P</ns1:subclass.l3>
-    <ns1:subclass.l2>VSMC/P</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/4f09f1e9-4b02-4446-90ae-8f56bb0f4783"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/371956df-9261-467f-8192-1220d2493c01">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Descending Vasa Recta Endothelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>EC-DVR</ns1:subclass.l3>
-    <ns1:subclass.l2>EC-DVR</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ef19e901-7479-42b9-acc3-3e1862d7fc84"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/513e9797-158c-41de-8322-fe626e445875">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Cortical Thick Ascending Limb Cell</ns1:subclass.full>
-    <ns1:subclass.l3>C-TAL</ns1:subclass.l3>
-    <ns1:subclass.l2>C-TAL</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/e5359ad3-942f-439b-a5ae-79670d66c05a"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000452">
-    <rdfs:label>parietal epithelial cell</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/11df1575-a752-4c97-95c2-e9e864883023">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>M2 Macrophage</ns1:subclass.full>
-    <ns1:subclass.l3>MAC-M2</ns1:subclass.l3>
-    <ns1:subclass.l2>MAC-M2</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/affc276c-19ad-4bfd-a3c5-b2620f241691">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Cycling Distal Convoluted Tubule Cell</ns1:subclass.full>
-    <ns1:subclass.l3>cycDCT</ns1:subclass.l3>
-    <ns1:subclass.l2>cycDCT</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/e13349c6-6d58-4d99-b5e6-c19a775ec4f1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/a809a636-c18e-4003-afaf-7bedf9eecaed"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/c4cadb51-3b59-48c9-b868-319cb1a9bea1">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Connecting Tubule Principal Cell</ns1:subclass.full>
-    <ns1:subclass.l3>CNT-PC</ns1:subclass.l3>
-    <ns1:subcluster_of rdf:resource="http://example.org/91d45e66-1c58-41dc-be41-22930be11af8"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/75101bdd-271d-415d-8879-b89dbf17eac2"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/3daee98c-4215-443b-b280-aa8e7594472c">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="Nd4c5456cc47d4e7cb45bcd866eb0e71b"/>
-    <ns1:cell_type>kidney loop of Henle thin ascending limb epithelial cell</ns1:cell_type>
-    <ns1:subclass.l1>ATL</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/68a5d094-5bd2-4fc0-880f-4f4d79fc12cd">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Classical Dendritic Cell</ns1:subclass.full>
-    <ns1:subclass.l3>cDC</ns1:subclass.l3>
-    <ns1:subclass.l2>cDC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/6b818c04-ae5d-455b-97ad-376d259cfa2c">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Adaptive / Maladaptive / Repairing Thick Ascending Limb Cell</ns1:subclass.full>
-    <ns1:subcluster_of rdf:resource="http://example.org/e5359ad3-942f-439b-a5ae-79670d66c05a"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/966f6844-4ebf-4de9-b11c-a091e5d57e63"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/15a3ff7b-e501-4725-a44b-02225ccac32e">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Podocyte</ns1:subclass.full>
-    <ns1:subclass.l3>dPOD</ns1:subclass.l3>
-    <ns1:subclass.l2>dPOD</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/b5a399dc-3d1f-4a92-bfe0-b98530535f06"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/b66bcc9c-63d0-44a7-ae19-49158df3fe2d">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="N9247adca958f4fdda92ad6437d52491f"/>
-    <ns1:cell_type>epithelial cell of proximal tubule</ns1:cell_type>
-    <ns1:subclass.l1>PT</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/a6f947f2-7b22-4982-979e-bff379ed24ab">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Vascular Smooth Muscle Cell</ns1:subclass.full>
-    <ns1:subclass.l3>VSMC</ns1:subclass.l3>
-    <ns1:subclass.l2>VSMC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/4f09f1e9-4b02-4446-90ae-8f56bb0f4783"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/8cfba151-460b-4782-b0f1-836234ae45d0">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Proximal Tubule Epithelial Cell Segment 3</ns1:subclass.full>
-    <ns1:subclass.l3>PT-S3</ns1:subclass.l3>
-    <ns1:subclass.l2>PT-S3</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/b66bcc9c-63d0-44a7-ae19-49158df3fe2d"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/edaffe57-6c35-43a3-871b-22583b269874">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>B Cell</ns1:subclass.full>
-    <ns1:subclass.l3>B</ns1:subclass.l3>
-    <ns1:subclass.l2>B</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="N6f3607197ef34ed2b1084d6988d11d02"/>
-    <ns1:cell_type>leukocyte</ns1:cell_type>
-    <ns1:subclass.l1>IMM</ns1:subclass.l1>
-    <ns1:class>immune cells</ns1:class>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/d70aee7e-d1d8-4410-892a-173748ec403b">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:state.l2>adaptive - str</ns1:state.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ceb01843-ca2e-446f-a7e4-2d81c3cbf74b"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/aaba7c80-ca1d-4fa0-b2e0-29a64c7d0e6a">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.l2>C-IC-A</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/7ba5f441-d77d-41e5-a6dc-520b8e45165e"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N9247adca958f4fdda92ad6437d52491f">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0002306"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/3ac24534-d638-4d19-b4b6-588e1a8c8023">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="Nb37321d13c7747d481ac67fdc8fe543b"/>
-    <ns1:cell_type>kidney collecting duct principal cell</ns1:cell_type>
-    <ns1:subclass.l1>PC</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002306">
-    <rdfs:label>epithelial cell of proximal tubule</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:class>epithelial cells</ns1:class>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:state.l2>degenerative</ns1:state.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/6636c120-8eda-453d-a31a-f7b8339c3f2f">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Myofibroblast</ns1:subclass.full>
-    <ns1:subclass.l3>MYOF</ns1:subclass.l3>
-    <ns1:subclass.l2>MYOF</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ceb01843-ca2e-446f-a7e4-2d81c3cbf74b"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/d70aee7e-d1d8-4410-892a-173748ec403b"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/faea4e73-f2a9-4ffe-b7a0-be1b87d22e97">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Cortical Thick Ascending Limb Cell</ns1:subclass.full>
-    <ns1:subclass.l3>dC-TAL</ns1:subclass.l3>
-    <ns1:subclass.l2>dC-TAL</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/e5359ad3-942f-439b-a5ae-79670d66c05a"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/82531633-c3be-4f2e-ac82-50f523517075">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Endothelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>dEC</ns1:subclass.l3>
-    <ns1:subclass.l2>dEC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ef19e901-7479-42b9-acc3-3e1862d7fc84"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N50f70d54470e48c981726e27cb59a230">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0002319"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:state.l2>reference</ns1:state.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/f1a89ccd-3807-4208-816d-8e98f898fe7d">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Connecting Tubule Cell</ns1:subclass.full>
-    <ns1:subclass.l3>dCNT</ns1:subclass.l3>
-    <ns1:subclass.l2>dCNT</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/75101bdd-271d-415d-8879-b89dbf17eac2"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/4aedaa40-86e2-4d85-9678-c2c016241c01">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Cycling Mononuclear Phagocyte</ns1:subclass.full>
-    <ns1:subclass.l3>cycMNP</ns1:subclass.l3>
-    <ns1:subclass.l2>cycMNP</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/a809a636-c18e-4003-afaf-7bedf9eecaed"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/017492c1-0284-45d8-b017-4a5a6b0b96fe">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Cycling Proximal Tubule Epithelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>cycPT</ns1:subclass.l3>
-    <ns1:subclass.l2>cycPT</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/b66bcc9c-63d0-44a7-ae19-49158df3fe2d"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/a809a636-c18e-4003-afaf-7bedf9eecaed"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/fa6289d2-1a8b-4910-8f5d-5fc206eb4613">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Cortical Intercalated Cell Type A</ns1:subclass.full>
-    <ns1:subclass.l3>dC-IC-A</ns1:subclass.l3>
-    <ns1:subclass.l2>dC-IC-A</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/7ba5f441-d77d-41e5-a6dc-520b8e45165e"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/76dc0463-7526-4f8a-b0cd-c3c008e87c59">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Medullary Fibroblast</ns1:subclass.full>
-    <ns1:subclass.l3>M-FIB</ns1:subclass.l3>
-    <ns1:subclass.l2>M-FIB</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ceb01843-ca2e-446f-a7e4-2d81c3cbf74b"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/966f6844-4ebf-4de9-b11c-a091e5d57e63">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:state.l2>adaptive - epi</ns1:state.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N7afcd0be9b804b958ac2616934c777c3">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001106"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N2398069e5aa64e1189f2769f498d5723">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1000768"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N95d248e4ecca429c8d082065ff55447f">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1000452"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/f15af74c-8d40-46dd-8149-a3104f07eb99">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Medullary Fibroblast</ns1:subclass.full>
-    <ns1:subclass.l3>dM-FIB</ns1:subclass.l3>
-    <ns1:subclass.l2>dM-FIB</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ceb01843-ca2e-446f-a7e4-2d81c3cbf74b"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000653">
-    <rdfs:label>podocyte</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Na4f03d64a92049048031f27c10025836">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000768">
-    <rdfs:label>kidney connecting tubule epithelial cell</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/90b58f85-a36f-4618-aa9b-1d23d872d966">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Descending Thin Limb Cell Type 3</ns1:subclass.full>
-    <ns1:subclass.l3>dDTL3</ns1:subclass.l3>
-    <ns1:subclass.l2>dDTL3</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/626a2d4a-40bf-4083-8809-4e152beaaa45"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/59cd9569-c300-4a6b-8abc-8758317dfda4">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Fibroblast</ns1:subclass.full>
-    <ns1:subclass.l3>FIB</ns1:subclass.l3>
-    <ns1:subclass.l2>FIB</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ceb01843-ca2e-446f-a7e4-2d81c3cbf74b"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/50ef2b62-9765-4ecb-a111-9f57722af079">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Ascending Thin Limb Cell</ns1:subclass.full>
-    <ns1:subclass.l3>ATL</ns1:subclass.l3>
-    <ns1:subclass.l2>ATL</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/3daee98c-4215-443b-b280-aa8e7594472c"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb96d743db4d34655b257eba05eeac5f9">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001318"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/6d4bd1ce-6061-4bd7-a882-2f1e8b35db9d">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="N50f70d54470e48c981726e27cb59a230"/>
-    <ns1:cell_type>neural cell</ns1:cell_type>
-    <ns1:subclass.full>Schwann Cell / Neural</ns1:subclass.full>
-    <ns1:subclass.l3>SC/NEU</ns1:subclass.l3>
-    <ns1:subclass.l2>SC/NEU</ns1:subclass.l2>
-    <ns1:subclass.l1>NEU</ns1:subclass.l1>
-    <ns1:class>neural cells</ns1:class>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/7ba5f441-d77d-41e5-a6dc-520b8e45165e">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="Nd46ac347323c4a99b75a00b4a016415d"/>
-    <ns1:cell_type>kidney collecting duct intercalated cell</ns1:cell_type>
-    <ns1:subclass.l1>IC</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/023a9de7-4b97-463f-9b7b-e41979730f84">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Neutrophil</ns1:subclass.full>
-    <ns1:subclass.l3>N</ns1:subclass.l3>
-    <ns1:subclass.l2>N</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1001431">
-    <rdfs:label>kidney collecting duct principal cell</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/e13349c6-6d58-4d99-b5e6-c19a775ec4f1">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="Nf5230567ea6646408bcf56de50c1f87c"/>
-    <ns1:cell_type>kidney distal convoluted tubule epithelial cell</ns1:cell_type>
-    <ns1:subclass.l1>DCT</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000738">
-    <rdfs:label>leukocyte</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/ef19e901-7479-42b9-acc3-3e1862d7fc84">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="Ne11e32286d65487a83655fdc54ad8751"/>
-    <ns1:cell_type>endothelial cell</ns1:cell_type>
-    <ns1:subclass.l1>EC</ns1:subclass.l1>
-    <ns1:class>endothelial cells</ns1:class>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/75101bdd-271d-415d-8879-b89dbf17eac2">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="N2398069e5aa64e1189f2769f498d5723"/>
-    <ns1:cell_type>kidney connecting tubule epithelial cell</ns1:cell_type>
-    <ns1:subclass.l1>CNT</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bb903a7d-11e0-4b80-81b6-fe55bbec3b54">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Degenerative Peritubular Capilary Endothelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>dEC-PTC</ns1:subclass.l3>
-    <ns1:subclass.l2>dEC-PTC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ef19e901-7479-42b9-acc3-3e1862d7fc84"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/fc8c78ed-ff5b-4602-9ee0-0a71593bedc1"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/3fc48e36-e244-4286-ba6a-b1cd0d5b6989"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/e5359ad3-942f-439b-a5ae-79670d66c05a">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="N7afcd0be9b804b958ac2616934c777c3"/>
-    <ns1:cell_type>kidney loop of Henle thick ascending limb epithelial cell</ns1:cell_type>
-    <ns1:subclass.l1>TAL</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/692de035-47fa-4b1e-9c41-7dc899101d2a">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Peritubular Capilary Endothelial Cell </ns1:subclass.full>
-    <ns1:subclass.l3>EC-PTC</ns1:subclass.l3>
-    <ns1:subclass.l2>EC-PTC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ef19e901-7479-42b9-acc3-3e1862d7fc84"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/ff64fb0c-06a4-4aae-8058-a89bccc0e968">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Descending Thin Limb Cell Type 2</ns1:subclass.full>
-    <ns1:subclass.l3>DTL2</ns1:subclass.l3>
-    <ns1:subclass.l2>DTL2</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/626a2d4a-40bf-4083-8809-4e152beaaa45"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/e0317c03-3812-4906-9270-e7ff2fb86afa">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Plasmacytoid Dendritic Cell</ns1:subclass.full>
-    <ns1:subclass.l3>pDC</ns1:subclass.l3>
-    <ns1:subclass.l2>pDC</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne11e32286d65487a83655fdc54ad8751">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/a69f5057-c8f4-4cce-907a-13116b76f4b3">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Lymphatic Endothelial Cell</ns1:subclass.full>
-    <ns1:subclass.l3>EC-LYM</ns1:subclass.l3>
-    <ns1:subclass.l2>EC-LYM</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/ef19e901-7479-42b9-acc3-3e1862d7fc84"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/626a2d4a-40bf-4083-8809-4e152beaaa45">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="Ne3c0655c1a0e401190bd152252a97665"/>
-    <ns1:cell_type>kidney loop of Henle thin descending limb epithelial cell</ns1:cell_type>
-    <ns1:subclass.l1>DTL</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/01f9d6c7-fc05-4c56-a300-7c6ca1651ed6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/ceb01843-ca2e-446f-a7e4-2d81c3cbf74b">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <rdf:type rdf:nodeID="N6a8cf8d50abb48cebb102adbfe6508eb"/>
-    <ns1:cell_type>kidney interstitial fibroblast</ns1:cell_type>
-    <ns1:subclass.l1>FIB</ns1:subclass.l1>
-    <ns1:subcluster_of rdf:resource="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/2d933f58-9961-4f5c-8957-90c7a6448c12">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:class>stroma cells</ns1:class>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1001318">
-    <rdfs:label>renal interstitial pericyte</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/b5e7e769-8dae-407a-8dfc-54684b586574">
-    <rdf:type rdf:resource="http://example.org/CellSet"/>
-    <ns1:subclass.full>Plasma Cell</ns1:subclass.full>
-    <ns1:subclass.l3>PL</ns1:subclass.l3>
-    <ns1:subclass.l2>PL</ns1:subclass.l2>
-    <ns1:subcluster_of rdf:resource="http://example.org/9012ba10-ad51-4bbe-8c0a-3e3d2b1d20af"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/5b1ea973-c0cd-4743-a0cc-e1462784df71"/>
-    <ns1:subcluster_of rdf:resource="http://example.org/347062ae-617d-417c-97fc-d2ea6365ef70"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf5230567ea6646408bcf56de50c1f87c">
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b11">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://example.org/consist_of"/>
     <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1000849"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne3c0655c1a0e401190bd152252a97665">
+  <rdf:Description rdf:about="http://example.org/2d5effa2-be41-47f4-97a6-34c06aab7ca8">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b2"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>neural cell</ns1:cell_type>
+    <ns1:class>neural cells</ns1:class>
+    <ns1:subclass.full>Schwann Cell / Neural</ns1:subclass.full>
+    <ns1:subclass.l1>NEU</ns1:subclass.l1>
+    <ns1:subclass.l2>SC/NEU</ns1:subclass.l2>
+    <ns1:subclass.l3>SC/NEU</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/c01b7ebe-4587-49c5-a999-293ecaab3a03">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:state.l2>transitioning</ns1:state.l2>
+    <ns1:subclass.full>Transitional Principal-Intercalated Cell</ns1:subclass.full>
+    <ns1:subclass.l2>tPC-IC</ns1:subclass.l2>
+    <ns1:subclass.l3>tPC-IC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/37016273-db24-4968-9a4e-54ab248df29a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a2f9e17b-427c-4620-93c4-435c20356c52"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a5655ea7-e4f2-4f2b-a1ba-95350c17fee6">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b4"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>kidney loop of Henle thin ascending limb epithelial cell</ns1:cell_type>
+    <ns1:subclass.l1>ATL</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b7">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001111"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0002306"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb37321d13c7747d481ac67fdc8fe543b">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
-    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001431"/>
+  <rdf:Description rdf:about="http://example.org/8ce4e34b-8bf2-4ca7-87d9-25b6ad216e29">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Cycling Endothelial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>cycEC</ns1:subclass.l2>
+    <ns1:subclass.l3>cycEC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/19b0127b-c9df-40e8-b1d9-fb71f62839e1"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/37016273-db24-4968-9a4e-54ab248df29a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/ed816563-62df-4240-875b-7e209e2ff6f3"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000692">
-    <rdfs:label>kidney interstitial fibroblast</rdfs:label>
+  <rdf:Description rdf:about="http://example.org/9ba3986a-3d0b-4f51-91cd-66a2e2c8b41f">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Connecting Tubule Principal Cell</ns1:subclass.full>
+    <ns1:subclass.l3>CNT-PC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/3ed96edc-d4bf-48a7-8c21-01cede2d54b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/8c4d2ec4-21d8-40fd-a9f8-200a76258853">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b7"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>epithelial cell of proximal tubule</ns1:cell_type>
+    <ns1:subclass.l1>PT</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/76400953-37b9-404f-b12b-66ca01149eb4">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Ascending Thin Limb Cell</ns1:subclass.full>
+    <ns1:subclass.l2>dATL</ns1:subclass.l2>
+    <ns1:subclass.l3>dATL</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a5655ea7-e4f2-4f2b-a1ba-95350c17fee6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/e06ec426-fa59-4e54-b1b2-56be0c2df060">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Distal Convoluted Tubule Cell Type 2</ns1:subclass.full>
+    <ns1:subclass.l3>DCT2</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/0b1b14da-f4f5-45e3-8fd3-7e67e30618c8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/3a83ab79-28f2-4c58-b2ee-0985656ff8bb">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Proximal Tubule Epithelial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>dPT</ns1:subclass.l2>
+    <ns1:subclass.l3>dPT</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/8c4d2ec4-21d8-40fd-a9f8-200a76258853"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/8996633a-6a9c-4d6b-b2c4-643da2cea1c2">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Outer Medullary Collecting Duct Principal Cell</ns1:subclass.full>
+    <ns1:subclass.l2>M-PC</ns1:subclass.l2>
+    <ns1:subclass.l3>OMCD-PC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/b3583f98-ed8a-472f-a73d-a559c8844b25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/cd0503a8-ef12-4bdb-97f3-8cd26e115540">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Cycling Mononuclear Phagocyte</ns1:subclass.full>
+    <ns1:subclass.l2>cycMNP</ns1:subclass.l2>
+    <ns1:subclass.l3>cycMNP</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/ed816563-62df-4240-875b-7e209e2ff6f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/3ed96edc-d4bf-48a7-8c21-01cede2d54b6">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.l2>CNT</ns1:subclass.l2>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/94ef3cdc-b617-4e2f-bf3b-82a074560c11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/0ffacbfa-6531-4e10-9053-f1a499e1a941">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Adaptive / Maladaptive / Repairing Proximal Tubule Epithelial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>aPT</ns1:subclass.l2>
+    <ns1:subclass.l3>aPT</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/8c4d2ec4-21d8-40fd-a9f8-200a76258853"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a9fbb9dd-4d67-46c5-8c1e-969ffad305bf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/1658f03c-bca7-4baf-8957-5991d3a9533f">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.l2>aTAL2</ns1:subclass.l2>
+    <ns1:subclass.l3>aTAL2</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/46b92bd4-c3ec-4b44-a836-50da3a31cf6b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/e8998560-cbf6-408f-aef1-10fbdeb1a57b">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b5"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>podocyte</ns1:cell_type>
+    <ns1:subclass.l1>POD</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a08c4115-728a-4f6e-a9c6-63f487563509">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b9"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>renal interstitial pericyte</ns1:cell_type>
+    <ns1:subclass.l1>VSM/P</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/bc9d5385-f421-4e1f-a7d9-cd217cf421c3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/b3583f98-ed8a-472f-a73d-a559c8844b25">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b10"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>kidney collecting duct principal cell</ns1:cell_type>
+    <ns1:subclass.l1>PC</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a20ad8fc-f025-4123-9000-176ed93f68d2">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Medullary Fibroblast</ns1:subclass.full>
+    <ns1:subclass.l2>dM-FIB</ns1:subclass.l2>
+    <ns1:subclass.l3>dM-FIB</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a9071280-e1be-4605-81dd-0bfb56206f4b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a686d418-774e-47a1-a1ac-38d38ecef261">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Connecting Tubule Intercalated Cell Type A</ns1:subclass.full>
+    <ns1:subclass.l3>CNT-IC-A</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/12ce9a40-f81b-4fe3-b8e1-4464a951059c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/4e583cfa-2e9a-4574-89e4-466036358e53">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Medullary Thick Ascending Limb Cell</ns1:subclass.full>
+    <ns1:subclass.l2>dM-TAL</ns1:subclass.l2>
+    <ns1:subclass.l3>dM-TAL</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1001106">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>kidney loop of Henle thick ascending limb epithelial cell</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000849">
-    <rdfs:label>kidney distal convoluted tubule epithelial cell</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://example.org/2347a728-8784-4852-acca-fa1af9ad21e4">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Outer Medullary Collecting Duct Principal Cell</ns1:subclass.full>
+    <ns1:subclass.l2>dM-PC</ns1:subclass.l2>
+    <ns1:subclass.l3>dOMCD-PC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/b3583f98-ed8a-472f-a73d-a559c8844b25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/b58fe1c1-0940-47d4-bbbd-1aff936bcdb1">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Macula Densa Cell</ns1:subclass.full>
+    <ns1:subclass.l2>MD</ns1:subclass.l2>
+    <ns1:subclass.l3>MD</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/1a5f80d5-86ec-4e14-b403-06fd608426df">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Neutrophil</ns1:subclass.full>
+    <ns1:subclass.l2>N</ns1:subclass.l2>
+    <ns1:subclass.l3>N</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/8200a74b-aa71-4b9d-8416-012e2c681ac1">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b3"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>parietal epithelial cell</ns1:cell_type>
+    <ns1:subclass.full>Parietal Epithelial Cell</ns1:subclass.full>
+    <ns1:subclass.l1>PEC</ns1:subclass.l1>
+    <ns1:subclass.l2>PEC</ns1:subclass.l2>
+    <ns1:subclass.l3>PEC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1001432">
-    <rdfs:label>kidney collecting duct intercalated cell</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>kidney collecting duct intercalated cell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/19b0127b-c9df-40e8-b1d9-fb71f62839e1">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b15"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>endothelial cell</ns1:cell_type>
+    <ns1:class>endothelial cells</ns1:class>
+    <ns1:subclass.l1>EC</ns1:subclass.l1>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a7ee258d-1a3b-4d40-98d2-646f9167270b">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Glomerular Capillary Endothelial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>EC-GC</ns1:subclass.l2>
+    <ns1:subclass.l3>EC-GC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/19b0127b-c9df-40e8-b1d9-fb71f62839e1"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/1bfc1b72-eef9-423e-a352-85de52b56349">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Podocyte</ns1:subclass.full>
+    <ns1:subclass.l2>POD</ns1:subclass.l2>
+    <ns1:subclass.l3>POD</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e8998560-cbf6-408f-aef1-10fbdeb1a57b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/c6d98f2c-635a-4d5a-bb98-5ebebcb203e1">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Cortical Thick Ascending Limb Cell</ns1:subclass.full>
+    <ns1:subclass.l2>C-TAL</ns1:subclass.l2>
+    <ns1:subclass.l3>C-TAL</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:state.l2>reference</ns1:state.l2>
+    <ns1:subcluster_of rdf:resource="http://example.org/d8ffcfac-cb6e-456c-bffd-21e6f5955f32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/d770a60a-178f-4abf-b92a-5e4dbb030997">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Non-classical Monocyte</ns1:subclass.full>
+    <ns1:subclass.l2>ncMON</ns1:subclass.l2>
+    <ns1:subclass.l3>ncMON</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a2f9e17b-427c-4620-93c4-435c20356c52">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b12"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>kidney collecting duct intercalated cell</ns1:cell_type>
+    <ns1:subclass.l1>IC</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1001318">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>renal interstitial pericyte</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/00ed25f6-f1ec-4eda-b1ae-0cfedb1ef567">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Outer Medullary Collecting Duct Intercalated Cell Type A</ns1:subclass.full>
+    <ns1:subclass.l2>M-IC-A</ns1:subclass.l2>
+    <ns1:subclass.l3>OMCD-IC-A</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a2f9e17b-427c-4620-93c4-435c20356c52"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/4c94711f-df8b-4e66-96fd-1b1ebce52d57">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Ascending Thin Limb Cell</ns1:subclass.full>
+    <ns1:subclass.l2>ATL</ns1:subclass.l2>
+    <ns1:subclass.l3>ATL</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a5655ea7-e4f2-4f2b-a1ba-95350c17fee6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/8417e500-da81-4eb0-993e-def54f81e438">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Connecting Tubule Cell</ns1:subclass.full>
+    <ns1:subclass.l2>dCNT</ns1:subclass.l2>
+    <ns1:subclass.l3>dCNT</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/94ef3cdc-b617-4e2f-bf3b-82a074560c11"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/2468429d-0e3f-4906-9801-ab01813cd43b">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Fibroblast</ns1:subclass.full>
+    <ns1:subclass.l2>FIB</ns1:subclass.l2>
+    <ns1:subclass.l3>FIB</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a9071280-e1be-4605-81dd-0bfb56206f4b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/2c4a657d-f275-4f74-9847-f2a42145c0de">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Proximal Tubule Epithelial Cell Segment 1 / Segment 2</ns1:subclass.full>
+    <ns1:subclass.l2>PT-S1/2</ns1:subclass.l2>
+    <ns1:subclass.l3>PT-S1/2</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/8c4d2ec4-21d8-40fd-a9f8-200a76258853"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000768">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>kidney connecting tubule epithelial cell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/e98f3258-5b4a-4e6d-8633-c922313b794a">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Distal Convoluted Tubule Cell Type 1</ns1:subclass.full>
+    <ns1:subclass.l3>DCT1</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/0b1b14da-f4f5-45e3-8fd3-7e67e30618c8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a33f0837-648a-48ab-b19c-8e5648a8a5ad">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Cortical Thick Ascending Limb Cell</ns1:subclass.full>
+    <ns1:subclass.l2>dC-TAL</ns1:subclass.l2>
+    <ns1:subclass.l3>dC-TAL</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/fb841148-23af-462e-b18f-eaa97e1ac55a">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Classical Dendritic Cell</ns1:subclass.full>
+    <ns1:subclass.l2>cDC</ns1:subclass.l2>
+    <ns1:subclass.l3>cDC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000115">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label>endothelial cell</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000597">
-    <rdfs:label>papillary tips cell</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://example.org/aa9e4344-9a81-413f-9c73-b18ef253cffe">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Renin-positive Juxtaglomerular Granular Cell</ns1:subclass.full>
+    <ns1:subclass.l2>REN</ns1:subclass.l2>
+    <ns1:subclass.l3>REN</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a08c4115-728a-4f6e-a9c6-63f487563509"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/subcluster_of">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="http://example.org/c579e814-2a78-4933-b47b-6623cfdbbf9d">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Cortical Collecting Duct Intercalated Cell Type A</ns1:subclass.full>
+    <ns1:subclass.l3>CCD-IC-A</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/12ce9a40-f81b-4fe3-b8e1-4464a951059c"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N6f3607197ef34ed2b1084d6988d11d02">
+  <rdf:Description rdf:about="http://example.org/8bdea5a8-d200-4f29-9574-991fd9f8ed11">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Vascular Smooth Muscle Cell / Pericyte</ns1:subclass.full>
+    <ns1:subclass.l2>VSMC/P</ns1:subclass.l2>
+    <ns1:subclass.l3>VSMC/P</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a08c4115-728a-4f6e-a9c6-63f487563509"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a9737d79-aed0-4595-8264-ef8d894b35cb">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Medullary Thick Ascending Limb Cell</ns1:subclass.full>
+    <ns1:subclass.l2>M-TAL</ns1:subclass.l2>
+    <ns1:subclass.l3>M-TAL</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b16">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://example.org/consist_of"/>
     <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000738"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002319">
-    <rdfs:label>neural cell</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://example.org/b30b0658-c697-4038-a25e-761b3dc11637">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Cycling Proximal Tubule Epithelial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>cycPT</ns1:subclass.l2>
+    <ns1:subclass.l3>cycPT</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/37016273-db24-4968-9a4e-54ab248df29a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/8c4d2ec4-21d8-40fd-a9f8-200a76258853"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/ed816563-62df-4240-875b-7e209e2ff6f3"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1001111">
-    <rdfs:label>kidney loop of Henle thin descending limb epithelial cell</rdfs:label>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000597">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>papillary tips cell</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/CellSet">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdf:Description rdf:about="http://example.org/c0d0cc66-0dd1-4654-bea6-6691ac6809ea">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Fibroblast</ns1:subclass.full>
+    <ns1:subclass.l2>dFIB</ns1:subclass.l2>
+    <ns1:subclass.l3>dFIB</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a9071280-e1be-4605-81dd-0bfb56206f4b"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1001106">
-    <rdfs:label>kidney loop of Henle thick ascending limb epithelial cell</rdfs:label>
+  <rdf:Description rdf:about="http://example.org/1d7a385e-180b-47dc-bf56-d205aa084f04">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Descending Thin Limb Cell Type 1</ns1:subclass.full>
+    <ns1:subclass.l2>DTL1</ns1:subclass.l2>
+    <ns1:subclass.l3>DTL1</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/15571f08-5174-443a-a904-e5d0a40d4f53"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1000768"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/8de06e1a-c949-4069-83a9-bf182ad3a777">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Intercalated Cell Type B</ns1:subclass.full>
+    <ns1:subclass.l2>IC-B</ns1:subclass.l2>
+    <ns1:subclass.l3>IC-B</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a2f9e17b-427c-4620-93c4-435c20356c52"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:state.l2>degenerative</ns1:state.l2>
+    <ns1:subcluster_of rdf:resource="http://example.org/37016273-db24-4968-9a4e-54ab248df29a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/e4712de4-ef7c-4468-9b46-744de8855be7">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Monocyte-derived Cell</ns1:subclass.full>
+    <ns1:subclass.l2>MDC</ns1:subclass.l2>
+    <ns1:subclass.l3>MDC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000849">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>kidney distal convoluted tubule epithelial cell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/d904e340-5e1e-4436-bd2a-8598025f6052">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Vascular Smooth Muscle Cell</ns1:subclass.full>
+    <ns1:subclass.l2>dVSMC</ns1:subclass.l2>
+    <ns1:subclass.l3>dVSMC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/a08c4115-728a-4f6e-a9c6-63f487563509"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/425c4b40-5b74-4579-ad7e-d39b423dcd54">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Descending Thin Limb Cell Type 2</ns1:subclass.full>
+    <ns1:subclass.l2>DTL2</ns1:subclass.l2>
+    <ns1:subclass.l3>DTL2</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/15571f08-5174-443a-a904-e5d0a40d4f53"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ed816563-62df-4240-875b-7e209e2ff6f3">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:state.l2>cycling</ns1:state.l2>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1001107">
-    <rdfs:label>kidney loop of Henle thin ascending limb epithelial cell</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>kidney loop of Henle thin ascending limb epithelial cell</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N6a8cf8d50abb48cebb102adbfe6508eb">
+  <rdf:Description rdf:about="http://example.org/39a4739d-1382-435a-bfb6-a6e1d5d05c27">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Cycling Distal Convoluted Tubule Cell</ns1:subclass.full>
+    <ns1:subclass.l2>cycDCT</ns1:subclass.l2>
+    <ns1:subclass.l3>cycDCT</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/37016273-db24-4968-9a4e-54ab248df29a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/cf1d7746-021f-4aa7-aea3-cd06337c3258"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/ed816563-62df-4240-875b-7e209e2ff6f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/cf1d7746-021f-4aa7-aea3-cd06337c3258">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b11"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>kidney distal convoluted tubule epithelial cell</ns1:cell_type>
+    <ns1:subclass.l1>DCT</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/98701011-4017-4198-a18b-4844c893e113">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Connecting Tubule Cell</ns1:subclass.full>
+    <ns1:subclass.l3>CNT</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/3ed96edc-d4bf-48a7-8c21-01cede2d54b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000653">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>podocyte</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/b5396261-9224-41cd-9483-9f2af1203056">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Myofibroblast</ns1:subclass.full>
+    <ns1:subclass.l2>MYOF</ns1:subclass.l2>
+    <ns1:subclass.l3>MYOF</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/f9ebe158-6c55-4e11-b41b-2e4908635122"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/9a87fa01-cd07-411b-bcae-718b0da092c0">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Inner Medullary Collecting Duct Cell</ns1:subclass.full>
+    <ns1:subclass.l2>IMCD</ns1:subclass.l2>
+    <ns1:subclass.l3>IMCD</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/b3583f98-ed8a-472f-a73d-a559c8844b25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/328cb556-1b6d-44bd-985b-37747663c53e">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Proximal Tubule Epithelial Cell Segment 3</ns1:subclass.full>
+    <ns1:subclass.l2>PT-S3</ns1:subclass.l2>
+    <ns1:subclass.l3>PT-S3</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/8c4d2ec4-21d8-40fd-a9f8-200a76258853"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/f9ebe158-6c55-4e11-b41b-2e4908635122">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:state.l2>adaptive - str</ns1:state.l2>
+    <ns1:subcluster_of rdf:resource="http://example.org/37016273-db24-4968-9a4e-54ab248df29a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a9071280-e1be-4605-81dd-0bfb56206f4b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/8d909ad6-6ef2-4522-b359-39d2e60dd152">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Mesangial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>MC</ns1:subclass.l2>
+    <ns1:subclass.l3>MC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a08c4115-728a-4f6e-a9c6-63f487563509"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/84c97424-8485-4a44-93f7-651b4460b43d">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Adaptive / Maladaptive / Repairing Fibroblast</ns1:subclass.full>
+    <ns1:subclass.l2>aFIB</ns1:subclass.l2>
+    <ns1:subclass.l3>aFIB</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/f9ebe158-6c55-4e11-b41b-2e4908635122"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/d8057a5e-a425-4e6f-bb55-00e419838319">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Mast Cell</ns1:subclass.full>
+    <ns1:subclass.l2>MAST</ns1:subclass.l2>
+    <ns1:subclass.l3>MAST</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/8036120c-079f-4a7e-9421-534371948eb6">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Cycling Myofibroblast</ns1:subclass.full>
+    <ns1:subclass.l2>cycMYOF</ns1:subclass.l2>
+    <ns1:subclass.l3>cycMYOF</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/37016273-db24-4968-9a4e-54ab248df29a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a9071280-e1be-4605-81dd-0bfb56206f4b"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/ed816563-62df-4240-875b-7e209e2ff6f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/b3dc4cb5-9eb9-49ad-b11c-4095a3381466">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Lymphatic Endothelial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>EC-LYM</ns1:subclass.l2>
+    <ns1:subclass.l3>EC-LYM</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/19b0127b-c9df-40e8-b1d9-fb71f62839e1"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a073cb32-9c09-4c35-8aa6-d1b105cb44e7">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Distal Convoluted Tubule Cell</ns1:subclass.full>
+    <ns1:subclass.l2>dDCT</ns1:subclass.l2>
+    <ns1:subclass.l3>dDCT</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/cf1d7746-021f-4aa7-aea3-cd06337c3258"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bcd4a4bc-fea6-4000-88c7-e087376f90df">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Plasma Cell</ns1:subclass.full>
+    <ns1:subclass.l2>PL</ns1:subclass.l2>
+    <ns1:subclass.l3>PL</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b13"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>kidney loop of Henle thick ascending limb epithelial cell</ns1:cell_type>
+    <ns1:subclass.l1>TAL</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/3fc7cedb-1483-49b0-9e46-1ad5e5ceaf35">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>T Cell</ns1:subclass.full>
+    <ns1:subclass.l2>T</ns1:subclass.l2>
+    <ns1:subclass.l3>T</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:class>epithelial cells</ns1:class>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/46b92bd4-c3ec-4b44-a836-50da3a31cf6b">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Adaptive / Maladaptive / Repairing Thick Ascending Limb Cell</ns1:subclass.full>
+    <ns1:subcluster_of rdf:resource="http://example.org/5506ac24-5ee6-485e-a0e1-b7ccbfe30ddd"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a9fbb9dd-4d67-46c5-8c1e-969ffad305bf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/91c7706a-2e42-4bf5-a9a9-bddf42c97402">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>B Cell</ns1:subclass.full>
+    <ns1:subclass.l2>B</ns1:subclass.l2>
+    <ns1:subclass.l3>B</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/0d6a37b7-9598-4475-8797-a1d9f262cd0e">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Afferent / Efferent Arteriole Endothelial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>EC-AEA</ns1:subclass.l2>
+    <ns1:subclass.l3>EC-AEA</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/19b0127b-c9df-40e8-b1d9-fb71f62839e1"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/1866ec2d-7076-44fb-8792-2199767776af">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b1"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>papillary tips cell</ns1:cell_type>
+    <ns1:subclass.full>Papillary Tip Epithelial Cell</ns1:subclass.full>
+    <ns1:subclass.l1>PapE</ns1:subclass.l1>
+    <ns1:subclass.l2>PapE</ns1:subclass.l2>
+    <ns1:subclass.l3>PapE</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/98e5d31d-6614-44ca-8250-0dfb5fd3a4cf">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Natural Killer Cell / Natural Killer T Cell</ns1:subclass.full>
+    <ns1:subclass.l2>NKC/T</ns1:subclass.l2>
+    <ns1:subclass.l3>NKC/T</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/559fa2b0-b502-49dc-b5e7-fda6e9f203ce">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Descending Thin Limb Cell Type 3</ns1:subclass.full>
+    <ns1:subclass.l2>DTL3</ns1:subclass.l2>
+    <ns1:subclass.l3>DTL3</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/15571f08-5174-443a-a904-e5d0a40d4f53"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1001111">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>kidney loop of Henle thin descending limb epithelial cell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/672b0ce9-8dde-4b21-987b-9477a605de4f">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Medullary Fibroblast</ns1:subclass.full>
+    <ns1:subclass.l2>M-FIB</ns1:subclass.l2>
+    <ns1:subclass.l3>M-FIB</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a9071280-e1be-4605-81dd-0bfb56206f4b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/d504723e-d8d3-40e0-9568-5d38ca6a274d">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.l2>aTAL1</ns1:subclass.l2>
+    <ns1:subclass.l3>aTAL1</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/46b92bd4-c3ec-4b44-a836-50da3a31cf6b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001107"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bc9d5385-f421-4e1f-a7d9-cd217cf421c3">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:class>stroma cells</ns1:class>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/738f238e-1644-43e8-bf9a-cd666ef26c17">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Peritubular Capilary Endothelial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>dEC-PTC</ns1:subclass.l2>
+    <ns1:subclass.l3>dEC-PTC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/19b0127b-c9df-40e8-b1d9-fb71f62839e1"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001111"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/14316feb-3628-4978-9b01-d7f4bedfb8ab">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Cortical Intercalated Cell Type A</ns1:subclass.full>
+    <ns1:subclass.l2>dC-IC-A</ns1:subclass.l2>
+    <ns1:subclass.l3>dC-IC-A</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a2f9e17b-427c-4620-93c4-435c20356c52"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/36453ea3-03af-4c06-9b94-a16bb99258da">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Descending Vasa Recta Endothelial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>EC-DVR</ns1:subclass.l2>
+    <ns1:subclass.l3>EC-DVR</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/19b0127b-c9df-40e8-b1d9-fb71f62839e1"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002306">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>epithelial cell of proximal tubule</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/76137f89-3fb3-468d-a23f-287d1fbc080d">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Inner Medullary Collecting Duct Cell</ns1:subclass.full>
+    <ns1:subclass.l2>dIMCD</ns1:subclass.l2>
+    <ns1:subclass.l3>dIMCD</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/b3583f98-ed8a-472f-a73d-a559c8844b25"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001431"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001318"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/94ef3cdc-b617-4e2f-bf3b-82a074560c11">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b8"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>kidney connecting tubule epithelial cell</ns1:cell_type>
+    <ns1:subclass.l1>CNT</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a9fbb9dd-4d67-46c5-8c1e-969ffad305bf">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:state.l2>adaptive - epi</ns1:state.l2>
+    <ns1:subcluster_of rdf:resource="http://example.org/37016273-db24-4968-9a4e-54ab248df29a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a3f65d77-9eba-4e52-8a14-4a20b3e9b2bd">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Descending Thin Limb Cell Type 3</ns1:subclass.full>
+    <ns1:subclass.l2>dDTL3</ns1:subclass.l2>
+    <ns1:subclass.l3>dDTL3</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/15571f08-5174-443a-a904-e5d0a40d4f53"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/11717681-6e90-4e51-8096-ae3eca0f07a6">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Podocyte</ns1:subclass.full>
+    <ns1:subclass.l2>dPOD</ns1:subclass.l2>
+    <ns1:subclass.l3>dPOD</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e8998560-cbf6-408f-aef1-10fbdeb1a57b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/2ccbfdf1-0d20-485c-8827-c2e43aac1b93">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Vascular Smooth Muscle Cell</ns1:subclass.full>
+    <ns1:subclass.l2>VSMC</ns1:subclass.l2>
+    <ns1:subclass.l3>VSMC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a08c4115-728a-4f6e-a9c6-63f487563509"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1000452"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/0b1b14da-f4f5-45e3-8fd3-7e67e30618c8">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.l2>DCT</ns1:subclass.l2>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/cf1d7746-021f-4aa7-aea3-cd06337c3258"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b16"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>leukocyte</ns1:cell_type>
+    <ns1:class>immune cells</ns1:class>
+    <ns1:subclass.l1>IMM</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/d8ffcfac-cb6e-456c-bffd-21e6f5955f32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/0f8a03f6-5c78-4740-b98c-fc30fd611fe7">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Cortical Collecting Duct Principal Cell</ns1:subclass.full>
+    <ns1:subclass.l2>C-PC</ns1:subclass.l2>
+    <ns1:subclass.l3>CCD-PC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/b3583f98-ed8a-472f-a73d-a559c8844b25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000452">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>parietal epithelial cell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/15571f08-5174-443a-a904-e5d0a40d4f53">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b6"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>kidney loop of Henle thin descending limb epithelial cell</ns1:cell_type>
+    <ns1:subclass.l1>DTL</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/d5d17d1b-9b57-436d-aa04-ef3ea8461997"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1000597"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/98c07530-586f-422a-80ef-076f63de4705">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Peritubular Capilary Endothelial Cell </ns1:subclass.full>
+    <ns1:subclass.l2>EC-PTC</ns1:subclass.l2>
+    <ns1:subclass.l3>EC-PTC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/19b0127b-c9df-40e8-b1d9-fb71f62839e1"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/e9e8e038-b5ef-4489-8922-e2e5f796857b">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>M2 Macrophage</ns1:subclass.full>
+    <ns1:subclass.l2>MAC-M2</ns1:subclass.l2>
+    <ns1:subclass.l3>MAC-M2</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001106"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/d8ffcfac-cb6e-456c-bffd-21e6f5955f32">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:state>reference</ns1:state>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/7e83663b-9307-43d6-b016-dfd61b44a99e">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Cycling Natural Killer Cell / Natural Killer T Cell</ns1:subclass.full>
+    <ns1:subclass.l2>cycNKC/T</ns1:subclass.l2>
+    <ns1:subclass.l3>cycNKC/T</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/ed816563-62df-4240-875b-7e209e2ff6f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1001431">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>kidney collecting duct principal cell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0002319"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002319">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>neural cell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/6f70a932-a03d-4fb3-b0e0-947008b714b7">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Plasmacytoid Dendritic Cell</ns1:subclass.full>
+    <ns1:subclass.l2>pDC</ns1:subclass.l2>
+    <ns1:subclass.l3>pDC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/e83a76a6-ad5e-4601-bfb1-d089504af11d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000692">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>kidney interstitial fibroblast</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b12">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/consist_of"/>
+    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1001432"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000738">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>leukocyte</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/5578078b-8805-4736-95da-e3921ee02f2a">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Cycling Connecting Tubule Cell</ns1:subclass.full>
+    <ns1:subclass.l2>cycCNT</ns1:subclass.l2>
+    <ns1:subclass.l3>cycCNT</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/37016273-db24-4968-9a4e-54ab248df29a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/94ef3cdc-b617-4e2f-bf3b-82a074560c11"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/ed816563-62df-4240-875b-7e209e2ff6f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bc905a48-cc79-48f1-9917-61a68b770ab6">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Ascending Vasa Recta Endothelial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>EC-AVR</ns1:subclass.l2>
+    <ns1:subclass.l3>EC-AVR</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/19b0127b-c9df-40e8-b1d9-fb71f62839e1"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/5469392d-f78e-49ec-8ca1-ddfa1c563a50">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.full>Degenerative Endothelial Cell</ns1:subclass.full>
+    <ns1:subclass.l2>dEC</ns1:subclass.l2>
+    <ns1:subclass.l3>dEC</ns1:subclass.l3>
+    <ns1:subcluster_of rdf:resource="http://example.org/19b0127b-c9df-40e8-b1d9-fb71f62839e1"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a17404bf-c8e7-4909-9da3-8559d2bdfdf7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/subcluster_of">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b14">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://example.org/consist_of"/>
     <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_1000692"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/12ce9a40-f81b-4fe3-b8e1-4464a951059c">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:subclass.l2>C-IC-A</ns1:subclass.l2>
+    <ns1:subcluster_of rdf:resource="http://example.org/81141405-f235-433a-9a45-7ece5d19e21a"/>
+    <ns1:subcluster_of rdf:resource="http://example.org/a2f9e17b-427c-4620-93c4-435c20356c52"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/a9071280-e1be-4605-81dd-0bfb56206f4b">
+    <rdf:type rdf:nodeID="nae4d54c8d18b4d30934d54b10b1da5b3b14"/>
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:cell_type>kidney interstitial fibroblast</ns1:cell_type>
+    <ns1:subclass.l1>FIB</ns1:subclass.l1>
+    <ns1:subcluster_of rdf:resource="http://example.org/bc9d5385-f421-4e1f-a7d9-cd217cf421c3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/37016273-db24-4968-9a4e-54ab248df29a">
+    <rdf:type rdf:resource="http://example.org/CellSet"/>
+    <ns1:state>altered</ns1:state>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/CellSet">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
 </rdf:RDF>
